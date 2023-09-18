@@ -26,7 +26,7 @@ Complete the following Tutorials and do not clean up resources until assignment 
 2. Create and Connect Storage Account - Using Azure CLI when option is available
    {https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-storage?tabs=azure-cli}
 
-- Enabled Managed Identity on Web App❌✅
+- Enabled Managed Identity on Web App ❌✅
 - Created Storage Account ❌✅
 - Web App Granted Access to Storage Account ❌✅
 
@@ -37,6 +37,12 @@ Complete the following Tutorials and do not clean up resources until assignment 
 
 - Key Vault Created ❌✅
 - Key Vault Secret Created ❌✅
-- Reference key vault secret as app setting ❌✅
+- Key Vault Access policy created for user 'jenny.curry@IntelliTect.com' with secret 'Get' permission ❌✅
+- Web App Granted Access to Key Vault ❌✅
+- Reference key vault secret as an app setting on your web app where the app setting name is the secret name and the value references your secret using the secret uri ❌✅
+  (https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references?tabs=azure-cli#source-app-settings-from-key-vault)
 
 ## Extra Credit
+
+Require student to provide rg anme, resource names, subscription, tenant on each assignment.
+Add Test case to end of assignment with az cli/ azure powershell to check if resource meets requirements
