@@ -4,8 +4,8 @@
 
 The purpose of this assignment is to solidify your learning of:
 
-- Do thing #1
-- Do thing #2
+- Using Git to a make a PR
+- 
 
 ## Instructions
 
