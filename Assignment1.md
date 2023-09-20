@@ -5,7 +5,7 @@
 The purpose of this assignment is to solidify your learning of:
 
 - Using Git to a make a PR
-- Set Up
+- Set Up Azure Subscription
 
 ## Instructions
 
