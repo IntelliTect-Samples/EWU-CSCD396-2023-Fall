@@ -1,7 +1,13 @@
-## Instructors
+## Introduction
+
+CSCD396 will provide students with an introduction to building solutions in Azure, Microsoft's Cloud Solution. This course will help prepare student's for Microsoft's Certifcation Exam AZ-204.
+
+We will cover practical examples 
+
+## Instructors and Class Information
 
 [Grant Erickson](https://github.com/GrantErickson), [Phil Spokas](https://github.com/mmwoodfo), and [Jenny Curry](https://github.com/jenny-curry)
-For general questions, we suggest asking in Teams so that others can help as well. We encourage people to work together and collaborate. Please feel free to help your fellow students out. Though it is possible to privately message people directly, as much as possible, we encourage open discussion on the main chat so that others can benefit as well.
+<br/>For general questions, we suggest asking in Teams so that others can help as well. We encourage people to work together and collaborate. Please feel free to help your fellow students out. Though it is possible to privately message people directly, as much as possible, we encourage open discussion on the main chat so that others can benefit as well.
 You can also send an e-mail to: [EWU-Instructors@IntelliTect.com](EWU-Instructors@IntelliTect.com) for final grade or general questions.
 
 ## GitHub Information
@@ -17,40 +23,31 @@ We will be using GitHub for all class lectures and assignments. All work will be
 Here are the things that will be required to learn class concepts. The instructors will assume you already know these items.
 
 - Good grasp of the C# programming language, or at least the ability to apply knowledge of similar languages such as Java to learn app deployment concepts.
-- Good familiarity with web development ( HTML, CSS, JS )
-- Familiarity with development environments like Visual Studio and VS Code
+- Familiarity with web development ( HTML, CSS, JS )
+- Familiarity with VS Code, Visual Studio or similar development environments
 - Understanding of how Git source control works with the ability to perform standard development workflows
 - Understanding of GitHub especially doing pull requests
-- Good grasp of programming theory: OOP, data structures, etc.
+- Grasp of basic aoplication programming including building C# projects and calling libraries
 
-## Tech Stack References
+## Tech Stack Installs/References
 
-### Installs
+The following tools and technologies will be used thorughout the course in class material and homework assignments.
 
-- [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
+We will be using Visual Studio Code exclusively. 
+
 - [Az CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update)
-- [Az Powershell Module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-10.3.0&tabs=powershell&pivots=windows-psgallery#installation)
-- Powershell Modules...
-  Az.Accounts
+- [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
+- Powershell Modules:
+    - [Az Powershell Module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-10.3.0&tabs=powershell&pivots=windows-psgallery#installation)
+    - [Az.Accounts](https://www.powershellgallery.com/packages/Az.Accounts/1.1.0)
 - [Docker](https://www.docker.com/get-started/)
 - [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-
-### Back End
-
 - [.NET](https://dotnet.microsoft.com/en-us/)
 - [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) ([Essential C# Web Site](https://essentialcsharp.com/home))
 - [ASP.NET 7.0](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0)
-- [Entity Framework 7](https://learn.microsoft.com/en-us/ef)
-- [ASP.NET Core Identity](https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-7.0&tabs=visual-studio)
-
-### DevOps
-
-- [Azure](https://docs.microsoft.com/en-us/azure/?product=popular)
-- [Azure AppService](https://docs.microsoft.com/en-us/azure/app-service/)
-- [Azure SQL](https://docs.microsoft.com/en-us/azure/azure-sql/)
-- [GitHub Actions](https://docs.github.com/en/actions)
-- [GitHub Actions YAML](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
-- [Azure Deployment Action](https://learn.microsoft.com/en-us/azure/static-web-apps/build-configuration?tabs=github-actions#build-and-deploy)
+- [Visual Studio Code aka "VS Code"]()
+- VS Code Extensions:
+    - 
 
 ## General Information:
 
