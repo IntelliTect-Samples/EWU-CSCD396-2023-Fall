@@ -18,6 +18,7 @@ We will be using GitHub for all class lectures and assignments. All work will be
 - You can get added benefits for signing up for a free [GitHub Student Developer Pack](https://education.github.com/pack).
 - **IMPORTANT** : Please fill out this **[form](Insert Link)** with your GitHub information. This is used by us so we can appropriately grade assignments.
 
+
 ## Prerequisites
 
 Here are the things that will be required to learn class concepts. The instructors will assume you already know these items.
