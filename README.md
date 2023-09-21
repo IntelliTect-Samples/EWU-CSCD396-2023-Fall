@@ -33,13 +33,13 @@ Here are the things that will be required to learn class concepts. The instructo
 
 The following tools and technologies will be used throughout the course in class material and homework assignments.
 
-We will be using Visual Studio Code exclusively. 
+We will be using Visual Studio Code exclusively.
 
 - [Az CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update)
 - [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
 - Powershell Modules:
-    - [Az Powershell Module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-10.3.0&tabs=powershell&pivots=windows-psgallery#installation)
-    - [Az.Accounts](https://www.powershellgallery.com/packages/Az.Accounts/1.1.0)
+  - [Az Powershell Module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-10.3.0&tabs=powershell&pivots=windows-psgallery#installation)
+  - [Az.Accounts](https://www.powershellgallery.com/packages/Az.Accounts/1.1.0)
 - [Docker](https://www.docker.com/get-started/)
 - [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 - [.NET](https://dotnet.microsoft.com/en-us/)
@@ -47,11 +47,11 @@ We will be using Visual Studio Code exclusively.
 - [ASP.NET 7.0](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0)
 - [Visual Studio Code aka "VS Code"]()
 - VS Code Extensions:
-    - [Azure Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
-    - [C# for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
-    - [C# Dev Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) (optional)
-    - [PowerShell for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) (optional)
-    - [Azure Account and Sign In](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) (optional)
+  - [Azure Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+  - [C# for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+  - [C# Dev Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) (optional)
+  - [PowerShell for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) (optional)
+  - [Azure Account and Sign In](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) (optional)
 
 ## General Information:
 
@@ -79,7 +79,12 @@ We will be using Visual Studio Code exclusively.
 - [GitHub Student Developer Pack](https://education.github.com/students) Lots of great development tools and resources. The JetBrains products ReSharper (a plugin for Visual Studio), and Rider (a full C# IDE) are great tools for helping you write better code.
 
 ### Optional
+
 - [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). Version 17.5 or later. The community edition is fine, though we believe most students should have access to higher SKUs with EWU's MSDN (this assumption may be wrong). Lab computers should have VSCode and VS Professional already installed. This will install .NET 7.0.
+
+### VS Code Extensions used in class
+
+- [Azure Tools for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
 
 ### Troubleshooting issues in VS Code
 
