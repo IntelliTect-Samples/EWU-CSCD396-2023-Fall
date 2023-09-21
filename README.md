@@ -47,7 +47,11 @@ We will be using Visual Studio Code exclusively.
 - [ASP.NET 7.0](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0)
 - [Visual Studio Code aka "VS Code"]()
 - VS Code Extensions:
-    - 
+    - Azure Tools for Visual Studio Code
+    - C# for Visual Studio Code
+    - C# Dev Kit for Visual Studio Code (optional)
+    - PowerShell for Visual Studio Code (optional)
+    - Azure Account and Sign In
 
 ## General Information:
 
