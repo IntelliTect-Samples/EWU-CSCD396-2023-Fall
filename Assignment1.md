@@ -4,19 +4,27 @@
 
 The purpose of this assignment is to solidify your learning of:
 
-- Using Git to a make a PR
-- Set Up Azure Subscription
+- Using Git to make a PR
+- Set up your Azure subscription 
+- Create Resource Group
+- Create a storage account in the resource group 
+- Create a script to list the resources in the subscription
+- Create an action that runs the script and lists the resources in the action's log
 
 ## Instructions
 
 1. Fork class repository ❌✅
-2. Clone forked repository ❌✅
-3. Create a branch for your changes and checkout to it
-   - Suggested branch naming Assn1/{your-name} ❌✅
-4. Set Up Azure following SettingUpAzure.md ❌✅
-5. Create a script called Assignment1.ps1 ❌✅
+2. Create Assignment 1 Branch and Sync branch from class repo ❌✅
+3. Clone your repo/branch to your computer 
+5. Set Up Azure following SettingUpAzure.md ❌✅
+6. Create a script called Assignment1.ps1 in the Assignment1 folder ❌✅
    - Set a variable named subscription_id in your PowerShell file and set the value as a string your subscription ID. ❌✅
-6. Commit your changes and create a PR against the class repository. ❌✅
+8. Create an App ID with a property of your repo name ❌✅
+9. Add the App ID as a contributor to your subscription ❌✅
+10. Create Assignment1.yml Action (in the workflows folder) ❌✅
+   - Authenticate to Azure ❌✅
+   - List resources in the subscription ❌✅
+11. Commit your changes and create a PR against the class repository.  ❌✅
 
 ## Extra Credit
-
+From the script, create a resource in Azure and have it be part of the list, then delete the resource.
