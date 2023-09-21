@@ -1,6 +1,6 @@
 ## Introduction
 
-CSCD 396 will provide students with an introduction to building solutions in Azure, Microsoft's Cloud Solution. This course will help prepare student's for Microsoft's Certifcation Exam AZ-204.
+CSCD 396 will provide students with an introduction to building solutions in Azure, Microsoft's Cloud Solution. This course will help prepare students for Microsoft's Certifcation Exam AZ-204.
 
 We will cover practical examples that focus on the use of cloud bases services in Azure over advanced programming concepts.
 
@@ -23,15 +23,15 @@ We will be using GitHub for all class lectures and assignments. All work will be
 Here are the things that will be required to learn class concepts. The instructors will assume you already know these items.
 
 - Good grasp of the C# programming language, or, at least the ability to apply knowledge of similar languages such as Java to learn app deployment concepts.
-- Grasp of basic aoplication programming concepts including building C# projects and calling libraries
+- Grasp of basic application programming concepts including building C# projects and calling libraries
 - Familiarity with web development
-- Familiarity with VS Code, Visual Studio or similar development environments
+- Familiarity with VS Code, Visual Studio, or similar development environments
 - Understanding of how Git source control works with the ability to perform standard development workflows
 - Understanding of GitHub especially doing pull requests
 
 ## Tech Stack Installs/References
 
-The following tools and technologies will be used thorughout the course in class material and homework assignments.
+The following tools and technologies will be used throughout the course in class material and homework assignments.
 
 We will be using Visual Studio Code exclusively. 
 
@@ -55,7 +55,7 @@ We will be using Visual Studio Code exclusively.
 
 ## General Information:
 
-- **Office Hours**: Office hours are available before class on Tuesday's and Thursdays starting at 1 PM. To ensure that an instructor will be available, please schedule an appointment 24-hours beforehand by sending a meeting request email to EWU-Instructors@IntelliTect.com. Alternative times may be available upon request.
+- **Office Hours**: Office hours are available before class on Tuesdays and Thursdays starting at 1 PM. To ensure that an instructor will be available, please schedule an appointment 24 hours beforehand by sending a meeting request email to EWU-Instructors@IntelliTect.com. Alternative times may be available upon request.
 - A list of topics covered in class will be recorded by students in the [**Lectures**](Lectures.md) markdown file. It will also contain a general schedule for the class, but this may be adjusted based on pacing.
 
 ### Homework and Assignments
@@ -63,7 +63,7 @@ We will be using Visual Studio Code exclusively.
 - Homework will be hard and will take time to complete. Do not put it off.
 - Start homework early and come to class with questions. Starting homework late is a recipe for disaster and pain.
 - All assignments, due dates, and grading information are in [**Assignments**](Assignments.md)
-- Homework will be done in indivdually. Do not hesitate to collaborate with classmates, but, work should be your own. If you are experiencing issues, please contact an instructor.
+- Homework will be done individually. Do not hesitate to collaborate with classmates, but, work should be your own. If you are experiencing issues, please contact an instructor.
 - Code reviews are done individually, each student should review code that is not done by them or their partner.
 - The day homework is initially due we will typically go over the assignment in class. (no guarantees)
 
@@ -71,7 +71,7 @@ We will be using Visual Studio Code exclusively.
 
 - [Visual Studio Code](https://code.visualstudio.com/) This can be used as an alternative to Visual Studio. Many of us also use it as our catch-all lightweight text/code editor.
 - [Azure for Students](https://azure.microsoft.com/en-us/free/students/) You will need to sign up for the free Azure student credits. This provides a place for us to deploy our application.
-  The course work will be cross-platform. However, in class the instructors will be working on Windows in both VSCode (for front end) and Visual Studio (for back end).
+  The coursework will be cross-platform. However, in class, the instructors will be working on Windows in both VSCode (for frontend applications and DevOps) and Visual Studio (for backend applications).
 
 ### Recommended
 
@@ -79,8 +79,7 @@ We will be using Visual Studio Code exclusively.
 - [GitHub Student Developer Pack](https://education.github.com/students) Lots of great development tools and resources. The JetBrains products ReSharper (a plugin for Visual Studio), and Rider (a full C# IDE) are great tools for helping you write better code.
 
 ### Optional
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). Version 17.5 or later. The community edition is fine, though we believe most students should have access to higher SKUs with EWU's MSDN (this assumption may be wrong). Lab computers should have Professional already installed. This will install .NET 7.0.
-
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). Version 17.5 or later. The community edition is fine, though we believe most students should have access to higher SKUs with EWU's MSDN (this assumption may be wrong). Lab computers should have VSCode and VS Professional already installed. This will install .NET 7.0.
 
 ### Troubleshooting issues in VS Code
 
@@ -89,4 +88,4 @@ We will be using Visual Studio Code exclusively.
 
 ### Azure Issues
 
-If you are having issues gettig Azure setup correctly and everything working, please check out this document: [Setting Up Asure](./SettingUpAzure.md)
+If you are having issues getting Azure set up correctly and everything working, please check out this document: [Setting Up Asure](./SettingUpAzure.md)
