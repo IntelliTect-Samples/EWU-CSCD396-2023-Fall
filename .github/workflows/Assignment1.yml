@@ -1,0 +1,29 @@
+name: Azure Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  azure:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: List Azure resources
+        run: az resource list
+
+      # Extra Credit: Create and delete a resource group
+      - name: Create resource group
+        run: az group create --name sampleResourceGroup --location eastus
+
+      - name: Delete resource group
+        run: az group delete --name sampleResourceGroup --yes --no-wait
