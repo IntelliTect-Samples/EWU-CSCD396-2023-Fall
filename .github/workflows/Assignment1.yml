@@ -3,7 +3,7 @@ name: Azure Workflow
 on:
   push:
     branches:
-      - main
+      - Assignment1
 
 jobs:
   azure:
