@@ -42,7 +42,17 @@ Complete the following Tutorials and do not clean up resources until assignment 
 - Reference key vault secret as an app setting on your web app where the app setting name is the secret name and the value references your secret using the secret uri ❌✅
   (https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references?tabs=azure-cli#source-app-settings-from-key-vault)
 
+4. Create a PowerShell script called Assignment1.ps1 on your branch within the Assignment1 folder ❌✅
+
+- Copy the following text into your PowerShell script and fill in your specific values for the variables
+  $SuscriptionId = ""
+  $ResourceGroup = ""
+  $WebAppName = ""
+  $webAppUrl = ""
+  $KeyVault = ""
+  $SecretName = ""
+  $StorageAccount = ""
+
 ## Extra Credit
 
-Require student to provide rg anme, resource names, subscription, tenant on each assignment.
-Add Test case to end of assignment with az cli/ azure powershell to check if resource meets requirements
+TDB
