@@ -10,10 +10,6 @@ The purpose of this assignment is to solidify your learning of:
 - Configuration of Event Grid to Subscribe to Container Registry Events
 - Using Azure PowerShell
 
-## Prerequisites
-
-- Docker CLI installed
-
 ## Instructions
 
 Complete the following Tutorials and do not clean up resources until assignment is graded.

@@ -4,53 +4,40 @@
 
 1. [Assignment 1](Assignment1.md)
    - 100 points +5 EC points
-   - Assigned: 4/4
-   - Initial work complete: 4/9 11:59 pm
-     - 50% for running pipeline with passing unit test
-     - 50% for working website
-   - Code Reviews Due by: 4/11 11:59 pm
-   - Review in class: 4/13 2:00 pm
-   - Final turn in: 4/13 11:59 pm
+   - Assigned: 9/21
+   - Initial work complete: 9/28 11:59 pm
+   - Review in class: 9/28 2:00 pm
+   - Final turn in: 9/28 11:59 pm
 1. [Assignment 2](Assignment2.md)
    - 100 points +5 EC points
-   - Assigned: 4/13
-   - Initial work complete: 4/23 11:59 pm
-     - 50% for running pipeline with passing unit test
-     - 50% for working website
-   - Code Reviews Due by: 4/25 11:59 pm
-   - Review in class: 4/27 2:00 pm
-   - Final turn in: 4/27 11:59 pm
+   - Assigned: 9/28
+   - PR Reviews Due by: TBD
+   - Review in class: 10/12 2:00 pm
+   - Final turn in: 10/12 11:59 pm
 1. [Assignment 3](Assignment3.md)
    - 100 points +5 EC points
-   - Assigned: 4/27
-   - Initial work complete: 5/7 11:59 pm
-     - 50% for running pipeline with passing unit test
-     - 50% for working website
-   - Code Reviews Due by: 5/9 11:59 pm
-   - Review in class: 5/11 2:00 pm
-   - Final turn in: 5/11 11:59 pm
+   - Assigned: 10/12
+   - Initial work complete: 10/24 11:59 pm
+   - PR Reviews Due by: TBD
+   - Review in class: 10/26 2:00 pm
+   - Final turn in: 10/26 11:59 pm
 1. [Assignment 4](Assignment4.md)
    - 100 points +5 EC points
-   - Assigned: 5/11
-   - Initial work complete: 5/21 11:59 pm
-     - 50% for running pipeline with passing unit test
-     - 50% for working website
-   - Code Reviews Due by: 5/23 11:59 pm
-   - Review in class: 5/25 2:00 pm
-   - Final turn in: 5/25 11:59 pm
+   - Assigned: 10/26
+   - Initial work complete: 11/7 11:59 pm
+   - PR Reviews Due by: TDB
+   - Review in class: 11/9 2:00 pm
+   - Final turn in: 11/9 11:59 pm
 1. [Assignment 5](Assignment5.md)
    - 100 points +5 EC points
-   - Assigned: 5/25
-   - Initial work complete: 6/4 11:59 pm
-     - 50% for running pipeline with passing unit test
-     - 50% for working website
-   - Code Reviews Due by: 6/6 11:59 pm
-   - Review in class: 6/8 2:00 pm
-   - Final turn in: 6/8 11:59 pm
+   - Assigned: 11/9
+   - Initial work complete: 11/22 11:59 pm
+   - PR Reviews Due by: TDB
+   - Review in class: 11/28 2:00 pm
+   - Final turn in: 11/28 11:59 pm
 1. [Final Project](Final.md)
    - 50 points +50 EC points
-   - Assigned: 4/4
-   - In class hackathon 6/8
+   - Assigned: 11/28
    - Final project presentations finals week
 
 If you are having trouble viwing the below graph, copy the code and paste it [in this editor](https://mermaid-js.github.io/docs/mermaid-live-editor-beta)
