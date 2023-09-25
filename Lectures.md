@@ -25,10 +25,12 @@
   - Resource Groups
   - Subscriptions
 
-## Week 2
+## Week 2-1
+- Q and A (max 10 min)
 - Review tools and environment configuration
 - Getting connected to Azure
-  - PowerShell and the AZ command
+  - API and Resource Manager architecture
+  - PowerShell and the AZ module
   - Azure CLI
   - Provisoning Services
 - [GitHub Actions Intro](https://docs.github.com/en/actions)
@@ -36,11 +38,10 @@
 - Services Review
   - Blob Storage
   - [Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-cli)
-  C:\Users\PhilSpokas\OneDrive - IntelliTect\Certification\AZ-204
-- Q and A 
+  
 
-## Week 3
-- Azure App Service
+## Week 2-2
+- Azure App Service (Grant)
   - Build and deploy
   - App Configuration
   - Slots
