@@ -30,14 +30,22 @@
 - Getting connected to Azure
   - PowerShell and the AZ command
   - Azure CLI
-  - Services
-- GitHub Actions Intro
+  - Provisoning Services
+- [GitHub Actions Intro](https://docs.github.com/en/actions)
 - Open ID Connect (OIDC)
+- Services Review
+  - Blob Storage
+  - [Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-cli)
+  C:\Users\PhilSpokas\OneDrive - IntelliTect\Certification\AZ-204
 - Q and A 
 
 ## Week 3
 - Azure App Service
-- 
+  - Build and deploy
+  - App Configuration
+  - Slots
+
+
 
 ## Topics (tentative)
 - x Git
@@ -63,6 +71,8 @@
 - Event Hub
 - Event Grid
 - Storage Queue
-- Configuration Service
-
+- App Configuration Service
+- Azure Monitor and App Insights
+- Redis Cache
+- CDN
 
