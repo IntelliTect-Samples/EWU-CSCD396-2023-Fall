@@ -13,7 +13,6 @@
 1. [Assignment 3](Assignment3.md)
    - 100 points +5 EC points
    - Assigned: 10/12
-   - Initial work complete: 10/24 11:59 pm
    - Turn in: 10/26 11:59 pm
 1. [Assignment 4](Assignment4.md)
    - 100 points +5 EC points

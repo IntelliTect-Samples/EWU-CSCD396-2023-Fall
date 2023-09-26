@@ -7,7 +7,7 @@ The purpose of this assignment is to solidify your learning of:
 - Log Analytics Workspace
 - Function App
 - Using Data Collection Rule/Endpoint to Ingest Logs
-- Using Azure PowerShell
+- API Managment Instance
 
 ## Prerequisites
 
@@ -47,5 +47,8 @@ Complete the following Tutorials and do not clean up resources until assignment 
 - Assigned 'Monitoring Metrics Publisher' and 'Contributor' role to the function app managed identity over the scope of your reosurce group. This identity will be executing the PowerShell function. https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#assign-permissions-to-the-dcr ❌✅
 - Executed function with PowerShell command : Invoke-RestMethod -Uri 'https://<Fn App Name>.azurewebsites.net/api/<Function Name>?code=<My API Key here>' -Body <Body> ❌✅
   - See monitor tab on the function to view requests.
+
+4. Create API Management Instance ❌✅
+   https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance-cli
 
 ## Extra Credit
