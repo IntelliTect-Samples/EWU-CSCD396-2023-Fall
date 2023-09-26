@@ -47,7 +47,6 @@
   - Slots
 
 
-
 ## Topics (tentative)
 - x Git
 - GitHub Actions
@@ -55,6 +54,8 @@
 - Scrum/Agile
 - IaC, Terraform and Bicep
 - Branch release patterns
+- Unit, Integration and Functional Tests
+- [More workflow stuff](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/about-workflows)
 
 ## Azure Services to Cover
 - Blob Storage
