@@ -1,0 +1,40 @@
+name: Assignment1
+
+on:
+  push:
+    branches: ["Assignment1"]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+#env:
+#  AZURE_WEBAPP_NAME: test # set this to your application's name
+#  AZURE_WEBAPP_PACKAGE_PATH: "." # set to webapp project root
+#  DOTNET_VERSION: "6.0.9" # set this to the dotnet version to use
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      # Checkout the repo
+      - uses: actions/checkout@main
+      - uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID_CREATED_SP }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      # Run dotnet build and publish
+      - name: "Show Connection Success"
+        run: |
+          az account "Show
+
+      # Deploy to Azure Web App
+      # ...
+
+      - name: logout
+        run: |
+          az logout
