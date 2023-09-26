@@ -21,7 +21,6 @@
 1. [Assignment 5](Assignment5.md)
    - 100 points +5 EC points
    - Assigned: 11/9
-   - Review in class: 11/28 2:00 pm
    - Turn in: 11/28 11:59 pm
 1. [Final Project](Final.md)
    - 50 points +50 EC points
