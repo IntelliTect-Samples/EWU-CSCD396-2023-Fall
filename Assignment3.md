@@ -37,4 +37,9 @@ Complete the following Tutorials and do not clean up resources until assignment 
 - New Image Version Pushed to Container Registry from Step 2 ❌✅
 - Verify Event Grid Subscription is Working Through Event Grid Viewer Endpoint ❌✅
 
+4. Create a container instance
+   https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart
+
+- Container instance created ❌✅
+
 ## Extra Credit
