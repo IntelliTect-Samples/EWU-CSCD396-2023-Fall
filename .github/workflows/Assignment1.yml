@@ -19,5 +19,5 @@ jobs:
 
         - uses: actions/checkout@v3
         - name: Run ps1 file
-          shell: powershell
+          shell: pwsh
           run: .\Assignment1\Assignment1.ps1
