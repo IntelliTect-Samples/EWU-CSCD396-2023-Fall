@@ -29,9 +29,11 @@ jobs:
         run: |
           az account show
 
+      #List Azure Resources
       - name: 'List Azure Resources'
           run: |
           az resource list
+          
       # Deploy to Azure Web app
     
       - name: logout
