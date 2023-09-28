@@ -6,7 +6,7 @@ We will cover practical examples that focus on the use of cloud bases services i
 
 ## Instructors and Class Information
 
-[Phil Spokas](https://github.com/mmwoodfo), [Grant Erickson](https://github.com/GrantErickson), and [Jenny Curry](https://github.com/jenny-curry)
+[Phil Spokas](https://github.com/philspokas), [Grant Erickson](https://github.com/GrantErickson), and [Jenny Curry](https://github.com/jenny-curry)
 <br/>For general questions, we suggest asking in Teams so that others can help as well. We encourage people to work together and collaborate. Please feel free to help your fellow students out. Though it is possible to privately message people, we encourage open discussion on the main chat so that others can benefit as well.
 You can also send an e-mail to: [EWU-Instructors@IntelliTect.com](EWU-Instructors@IntelliTect.com) for final grade or general questions.
 
@@ -16,8 +16,7 @@ We will be using GitHub for all class lectures and assignments. All work will be
 
 - Please sign up for a GitHub if you do not already have one.
 - You can get added benefits for signing up for a free [GitHub Student Developer Pack](https://education.github.com/pack).
-- **IMPORTANT** : Please fill out this **[form](Insert Link)** with your GitHub information. This is used by us so we can appropriately grade assignments.
-
+- **IMPORTANT** : Please email your name GitHub username, and EWU email to EWU-Instructors@IntelliTect.com. This is used by us so we can appropriately grade assignments.
 
 ## Prerequisites
 
