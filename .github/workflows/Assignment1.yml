@@ -12,7 +12,7 @@ jobs:
     environment: production
     steps:
       # Checkout the repo
-      - uses: actions/checkout@Assignment1
+      - uses: actions/checkout@main
       # login to azure
       - uses: azure/login@v1
         with:
