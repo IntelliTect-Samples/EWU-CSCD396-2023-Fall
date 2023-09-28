@@ -18,6 +18,11 @@ jobs:
             enable-AzPSSession: true
 
         - uses: actions/checkout@v3
-        - name: Run ps1 file
-          shell: pwsh
-          run: .\Assignment1\Assignment1.ps1
+        #- name: Run ps1 file
+        #  shell: pwsh
+        #  run: .\Assignment1\Assignment1.ps1
+        - name: Run Azure PowerShell script
+          uses: azure/powershell@v1
+          with:
+           inlineScript: .\Assignment1\Assignment1.ps1
+           azPSVersion: "latest"
