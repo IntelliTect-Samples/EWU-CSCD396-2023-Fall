@@ -16,7 +16,6 @@ jobs:
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
             enable-AzPSSession: true
-            allow-no-subscriptions: true
 
         - name: 'Get resource group with PowerShell action'
           uses: azure/powershell@v1
