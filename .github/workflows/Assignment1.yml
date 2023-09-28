@@ -27,9 +27,13 @@ jobs:
       # Run dotnet build and publish
       - name: 'Show Connection Success'
         run: |
-          az account show;
+          az account show
+
+      # Run dotnet build and publish
+      - name: 'List Resources'
+        run: |
           az resource list
-          
+
       # Deploy to Azure Web app
     
       - name: logout
