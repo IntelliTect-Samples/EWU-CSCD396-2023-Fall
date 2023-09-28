@@ -16,12 +16,12 @@ The purpose of this assignment is to solidify your learning of:
 1. Fork class repository ❌✅
 2. Create Assignment 1 Branch and Sync branch from class repo ❌✅
 3. Clone your repo/branch to your computer 
-5. Set Up Azure following SettingUpAzure.md ❌✅
-6. Create a script called Assignment1.ps1 in the Assignment1 folder ❌✅
-   - Set a variable named subscription_id in your PowerShell file and set the value as a string your subscription ID. ❌✅
-8. Create an App ID with a property of your repo name ❌✅
-9. Add the App ID as a contributor to your subscription ❌✅
-10. Create Assignment1.yml Action (in the workflows folder) ❌✅
+5. Set Up Azure following SettingUpAzure.md ✅
+6. Create a script called Assignment1.ps1 in the Assignment1 folder ✅
+   - Set a variable named subscription_id in your PowerShell file and set the value as a string your subscription ID. ✅
+8. Create an App ID with a property of your repo name ✅
+9. Add the App ID as a contributor to your subscription ✅
+10. Create Assignment1.yml Action (in the workflows folder) ✅
    - Authenticate to Azure ❌✅
    - List resources in the subscription ❌✅
 11. Commit your changes and create a PR against the class repository.  ❌✅
