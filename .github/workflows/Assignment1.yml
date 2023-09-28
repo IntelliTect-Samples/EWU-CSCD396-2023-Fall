@@ -18,8 +18,5 @@ jobs:
             enable-AzPSSession: true
 
         - name: Run ps1 file
-          #shell: powershell
-          #run: .\Assignment1\Assignment1.ps1
-          run: |
-            $content = Get-Content .\Assignment1\Assignment1.ps1
-            Write-Output ::set-output name=jsonData::$content
+          shell: powershell
+          run: .\Assignment1\Assignment1.ps1
