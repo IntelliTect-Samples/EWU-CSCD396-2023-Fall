@@ -21,8 +21,6 @@ jobs:
         #  shell: powershell
         #  run: /Assignment1/Assignment1.ps1 -Task ModuleBuild
         - uses: actions/checkout@v3
-        - name: script_run
-          uses: azure/powershell@v1
-          with:
-            inlineScript:
-              .\Assignment1\Assignment1.ps1 -ReportFolder .\Assignment1
+        - name: Run ps1 file
+          shell: powershell
+          run: .\Assignment1\Assignment1.ps1 -ReportFolder .\Assignment1
