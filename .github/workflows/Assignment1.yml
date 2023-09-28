@@ -13,8 +13,8 @@ env:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    environment: production
+    runs-on: windows-latest
+    environment: Deployment
     steps:
       # Checkout the repo
       - uses: actions/checkout@main
