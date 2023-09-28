@@ -1,24 +1,19 @@
-#sample yaml
+---
+
 name: Azure Login with OIDC
 on: 
-  workflow_dispatch:
-
-permissions:
-  id-token: write
-  contents: read
-
-env:
-  AZURE_WEBAPP_NAME: jc-oidc-app    # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
-  DOTNET_VERSION: '6.0.9'           # set this to the dot net version to use
+  push:
+    branches:
+      - Assignment1
 
 jobs:
-  deploy:
+  azure_Login:
     runs-on: ubuntu-latest
     environment: production
     steps:
       # Checkout the repo
-      - uses: actions/checkout@main
+      - uses: actions/checkout@Assignment1
+      # login to azure
       - uses: azure/login@v1
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID_CREATED_SP }}
@@ -29,9 +24,11 @@ jobs:
       - name: 'Show Connection Success'
         run: |
           az account show
-          
+          az resource list
       # Deploy to Azure Web app
     
       - name: logout
         run: |
           az logout
+
+...
