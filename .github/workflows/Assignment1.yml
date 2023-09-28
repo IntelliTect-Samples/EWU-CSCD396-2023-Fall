@@ -33,7 +33,7 @@ jobs:
         run: az resource list
 
       - name: Remove resource group
-        run: az group remove --name tempResourceGroup --location westus
+        run: az group delete --name tempResourceGroup --yes
 
       - name: Logout
         run: az logout
