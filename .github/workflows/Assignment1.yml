@@ -2,8 +2,7 @@ name: Assignment1
 
 on:
   push:
-    branches:
-      -Assignment1
+    branches: ["Assignment1"]
   workflow_dispatch:
 
 permissions:
@@ -22,7 +21,7 @@ jobs:
     steps:
       # Checkout the repo
       - uses: actions/checkout@main
-  
+
       - uses: azure/login@v1
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID_CREATED_SP }}
@@ -38,7 +37,6 @@ jobs:
       - name: "List Resources"
         run: |
           az resource list
-
 
       # Deploy to Azure Web App
       # ...
