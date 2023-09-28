@@ -25,8 +25,15 @@ jobs:
       - name: Show Connection Success
         run: az account show
 
+      # Extra credit
+      - name: Create resource group
+        run: az group create --name tempResourceGroup --location eastwest
+
       - name: List Azure resources
         run: az resource list
+
+      - name: Remove resource group
+        run: az group remove --name tempResourceGroup --location eastwest
 
       - name: Logout
         run: az logout
