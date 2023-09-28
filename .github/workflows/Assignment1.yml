@@ -1,4 +1,4 @@
-name: Run Azure Login with OpenID Connect and PowerShell
+name: Azure Login and powershell script
 on: [push]
 
 permissions:
@@ -18,9 +18,6 @@ jobs:
             enable-AzPSSession: true
 
         - uses: actions/checkout@v3
-        #- name: Run ps1 file
-        #  shell: pwsh
-        #  run: .\Assignment1\Assignment1.ps1
         - name: Run Azure PowerShell script
           uses: azure/powershell@v1
           with:
