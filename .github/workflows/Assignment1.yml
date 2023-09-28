@@ -28,12 +28,26 @@ jobs:
       - name: 'Show Connection Success'
         run: |
           az account show
-          
+
+      # list resources 
       - name: 'list resourses'
         run: |
           az resource list
+          
+      # create resource group
+      - name: 'Create resource group'
+        run: az group create --name tempRG --location westus
+
+      #list again
+      - name: 'list resourses 2'
+        run: |
+          az resource list
+          
+      #delete resource group
+      - name: 'Delete resource group'
+        run: az group delete --name tempRG --yes --no-wait 
+        
       # Deploy to Azure Web app
-    
       - name: logout
         run: |
           az logout
