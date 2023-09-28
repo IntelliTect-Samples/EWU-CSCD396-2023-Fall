@@ -17,6 +17,12 @@ jobs:
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
             enable-AzPSSession: true
   
-        - name: Run ps1 File
-          shell: powershell
-          run: /Assignment1/Assignment1.ps1 -Task ModuleBuild
+        #- name: Run ps1 File
+        #  shell: powershell
+        #  run: /Assignment1/Assignment1.ps1 -Task ModuleBuild
+        - uses: actions/checkout@v3
+        - name: script_run
+          uses: azure/powershell@v1
+          with:
+            inlineScript:
+              .\Assignment1\Assignment1.ps1 -ReportFolder .\Assignment1
