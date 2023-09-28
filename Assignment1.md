@@ -22,10 +22,10 @@ The purpose of this assignment is to solidify your learning of:
 8. Create an App ID with a property of your repo name ✅
 9. Add the App ID as a contributor to your subscription ✅
 10. Create Assignment1.yml Action (in the workflows folder) ✅
-   - Authenticate to Azure ❌✅
-   - List resources in the subscription ❌✅
-11. Commit your changes and create a PR against the class repository.  ❌✅
-12. Provide Screenshots of the Following Screens
+   - Authenticate to Azure ✅
+   - List resources in the subscription ✅
+11. Commit your changes and create a PR against the class repository.  ✅
+12. Provide Screenshots of the Following Screens ✅
 
 - OIDC Federated Credential Configuration
 - Log of GitHub actions successfully ran with oidc login and subscription resources listed
