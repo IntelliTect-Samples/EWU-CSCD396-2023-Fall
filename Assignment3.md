@@ -9,10 +9,8 @@ The purpose of this assignment is to solidify your learning of:
 - Event Grid
 - Configuration of Event Grid to Subscribe to Container Registry Events
 - Using Azure PowerShell
-
-## Prerequisites
-
-- Docker CLI installed
+- Azure Container Instances
+- Event Hub
 
 ## Instructions
 
@@ -40,5 +38,18 @@ Complete the following Tutorials and do not clean up resources until assignment 
 - Subscribe Event Grid to Container Registry Events ❌✅
 - New Image Version Pushed to Container Registry from Step 2 ❌✅
 - Verify Event Grid Subscription is Working Through Event Grid Viewer Endpoint ❌✅
+
+4. Create a container instance
+   https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart
+
+- Container instance created ❌✅
+
+5. Create Event Hub
+   https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-quickstart-powershell
+
+- Event Hub Namespace Created ❌✅
+- Event Hub Created ❌✅
+- Events sent to your Event Hub
+  https://learn.microsoft.com/en-us/azure/event-hubs/send-and-receive-events-using-data-generator
 
 ## Extra Credit

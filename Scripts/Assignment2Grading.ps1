@@ -1,15 +1,18 @@
-﻿$ResourceGroup = "test-rg"
-$WebAppName = "testapp-jc"
-$webAppUrl = "https://testapp-jc.azurewebsites.net"
-$KeyVault = "kvtest-jc"
-$SecretName = "supersecret"
-$StorageAccount = "securewebappstorage2"
+﻿# $SubscriptionId = ""
+# $ResourceGroup = ""
+# $WebAppName = ""
+# $WebAppUrl = ""
+# $KeyVault = ""
+# $SecretName = ""
+# $StorageAccount = ""
 
 $RequirementsMet = 0
 $TotalRequirements = 10
-$GraderObjectId = "70784213-058d-49e9-af1c-f078931b9a87"
 
 Connect-AzAccount
+Set-AzContext -Subscription $SubscriptionId
+$GraderObjectId = ((Get-AzContext).Account.ExtendedProperties.HomeAccountId.Split('.'))[0]
+
 # Create an Azure AD token for authentication
 $token = (Get-AzAccessToken).Token
 
@@ -29,8 +32,7 @@ $headers = @{
 }
 
 # Send an HTTP GET request to the Azure Web App URL
-$response = Invoke-WebRequest -Uri $webAppUrl -Headers $headers
-Invoke-RestMethod -Uri $webAppUrl -Headers $headers -Method 'Post'
+$response = Invoke-WebRequest -Uri $WebAppUrl -Headers $headers
 
 # Check the response
 if ($response.StatusCode -eq 200) {
@@ -130,6 +132,5 @@ if ($appSettingValue -like $expectedValue ) {
 else {
     Write-Host "Failed to find key vault app setting with key vault secret reference"
 }
-
 
 Write-Host "Requirements Met on Assignment $RequirementsMet/$TotalRequirements"
