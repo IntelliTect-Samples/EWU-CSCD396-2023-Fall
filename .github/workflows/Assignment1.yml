@@ -14,21 +14,21 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      # Checkout the repo.
-      - uses: actions/checkout@main
-      # Log into azure.
-      - uses: azure/login@v1
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Login to Azure
+        uses: azure/login@v1
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID_CREATED_SP }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      # Run dotnet build and publish.
-      - name: 'Show Connection Success'
-        run: |
-          az account show
+      - name: Show Connection Success
+        run: az account show
 
-      # Deploy to Azure Web app.
-      - name: logout
-        run: |
-          az logout
+      - name: List Azure resources
+        run: az resource list
+
+      - name: Logout
+        run: az logout
