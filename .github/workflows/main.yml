@@ -17,9 +17,6 @@ jobs:
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
             enable-AzPSSession: true
 
-        - name: 'Get resource group with PowerShell action'
-          uses: azure/powershell@v1
-          with:
-             inlineScript: |
-               Get-AzResourceGroup
-             azPSVersion: "latest"
+        - name: 'Run Powershell script'
+          shell: pwsh
+          run: ./Assignment1/Assignment1.ps1 -Task ModuleBuild
