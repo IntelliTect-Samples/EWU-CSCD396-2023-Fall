@@ -6,6 +6,10 @@ on:
     branches:
       - Assignment1
 
+permissions:
+  id-token: write
+  contents: read
+  
 jobs:
   azure_Login:
     runs-on: ubuntu-latest
