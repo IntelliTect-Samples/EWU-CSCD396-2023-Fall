@@ -28,6 +28,9 @@ jobs:
       - name: 'Show Connection Success'
         run: |
           az account show
+          
+      - name: 'list resourses'
+        run: |
           az resource list
       # Deploy to Azure Web app
     
