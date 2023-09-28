@@ -1,5 +1,8 @@
 name: Azure Login with OIDC
 on:
+  push:
+    branches:
+      - Assignment1
   workflow_dispatch:
 
 permissions:
