@@ -16,8 +16,7 @@ jobs:
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
             enable-AzPSSession: true
-
+  
         - name: Build
-          shell: pwsh
-          run: |
-            .\Assignment1\Assignment1.ps1
+          shell: powershell
+          run: ./Assignment1/Assignment1.ps1 -Task ModuleBuild
