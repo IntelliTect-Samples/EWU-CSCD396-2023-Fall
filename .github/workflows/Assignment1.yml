@@ -27,13 +27,13 @@ jobs:
 
       # Extra credit
       - name: Create resource group
-        run: az group create --name tempResourceGroup --location eastwest
+        run: az group create --name tempResourceGroup --location westus
 
       - name: List Azure resources
         run: az resource list
 
       - name: Remove resource group
-        run: az group remove --name tempResourceGroup --location eastwest
+        run: az group remove --name tempResourceGroup --location westus
 
       - name: Logout
         run: az logout
