@@ -29,21 +29,10 @@ jobs:
         run: |
           az account show
           
-# Creates Azure Resource
-      - name: 'Creates Azure Resource'
-        run: |
-        az resource create --resource-group myRG --name myApiApp --resource-type Microsoft.web/sites --is-full-object --properties "{ \"kind\": \"api\", \"location\": \"West US\", \"properties\": { \"serverFarmId\": \"/subscriptions/{SubID}/resourcegroups/{ResourceGroup} /providers/Microsoft.Web/serverfarms/{ServicePlan}\" } }"
-
 # Lists Azure Resources
       - name: 'List Azure Resources'
         run: |
           az resource list   
-
-# Deletes Azure Resource
-      - name: 'Deletes Azure Resource'
-        run: |
-          az resource delete -g MyRG -n myApiApp
- 
       
       # Deploy to Azure Web app
       - name: logout
