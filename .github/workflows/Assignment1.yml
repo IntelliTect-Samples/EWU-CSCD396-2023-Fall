@@ -24,15 +24,25 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       
-      # Run dotnet build and publish
+      # Show Connection Success
       - name: 'Show Connection Success'
         run: |
           az account show
 
-      # Run dotnet build and publish
+      # Create Resources
+      - name: 'Create Resources'
+        run: |
+          $resourcename = 'My Resource'
+
+      # List Resources
       - name: 'List Resources'
         run: |
           az resource list
+
+      # Delete Resources
+      - name: 'Delete Resources'
+        run: |
+          $resourcename
 
       # Deploy to Azure Web app
     
