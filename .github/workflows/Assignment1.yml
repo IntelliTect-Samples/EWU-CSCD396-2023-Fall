@@ -28,19 +28,15 @@ jobs:
         run: az account show
 
       # Extra credit
-      - name: Create resource group
-        run: |
-          az staticwebapp create -g EWU-CSCD396-2023-Fall -n tempStaticWebsite
+      - name: Create temporary resource
+        run: az staticwebapp create -g EWU-CSCD396-2023-Fall -n tempStaticWebsite
 
       - name: List Azure resources
-        run: |
-          az resource list
+        run: az resource list
 
-      - name: Remove resource group
-        run: |
-          az staticwebapp delete -n tempStaticWebsite -y
+      - name: Remove temporary teresource
+        run: az staticwebapp delete -n tempStaticWebsite -y
 
       - name: Logout
-        run: |
-          az logout
+        run: az logout
 
