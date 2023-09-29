@@ -1,0 +1,1 @@
+$subscription_id = "6f0faedd-afd2-46a3-969c-55fedaf53408"
