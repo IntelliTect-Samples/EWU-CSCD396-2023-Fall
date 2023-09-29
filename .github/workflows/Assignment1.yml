@@ -29,20 +29,10 @@ jobs:
         run: |
           az account show
 
-      # Create Resources
-      - name: 'Create Resources'
-        run: |
-          $resourcename = 'My Resource'
-
       # List Resources
       - name: 'List Resources'
         run: |
           az resource list
-
-      # Delete Resources
-      - name: 'Delete Resources'
-        run: |
-          echo $resourcename
 
       # Deploy to Azure Web app
     
