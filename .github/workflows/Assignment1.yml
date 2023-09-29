@@ -32,7 +32,7 @@ jobs:
 # Creates Azure Resource
       - name: 'Creates Azure Resource'
         run: |
-         az --% resource create -g MyRG -n myApiApp --resource-type Microsoft.web/sites --is-full-object --properties "{ \"kind\": \"api\", \"location\": \"West US\", \"properties\": { \"serverFarmId\": \"/subscriptions/{subscription_id}/resourcegroups/{resource_group}/providers/Microsoft.Web/serverfarms/{plan_name}\" } }"
+         az resource create -g myRG -n myApiApp --resource-type Microsoft.web/sites --is-full-object --properties @jsonConfigFile --latest-include-preview
 
 # Lists Azure Resources
       - name: 'List Azure Resources'
