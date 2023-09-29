@@ -15,25 +15,29 @@ jobs:
     environment: production
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@main
 
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{secrets.AZURE_CREDENTIALS}}
 
       - name: Show Connection Success
         run: az account show
 
       # Extra credit
       - name: Create resource group
-        run: az group create --name tempResourceGroup --location westus
+        run: |
+          az staticwebapp create -g EWU-CSCD396-2023-Fall -n tempStaticWebsite
 
       - name: List Azure resources
-        run: az resource list
+        run: |
+          az resource list
 
       - name: Remove resource group
-        run: az group delete --name tempResourceGroup --yes
+        run: |
+          az staticwebapp delete -n tempStaticWebsite -y
 
       - name: Logout
-        run: az logout
+        run: |
+          az logout
