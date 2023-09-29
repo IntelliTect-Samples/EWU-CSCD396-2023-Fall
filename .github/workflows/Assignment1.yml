@@ -33,9 +33,14 @@ jobs:
       - name: 'List Azure Resources'
         run: |
           az resource list   
-          
+
+
+ # Creates Azure Resource
+      - name: 'Creates Azure Resource'
+        run: |
+          az resource create -g MyResourceGroup -n MyVm --resource-type "Microsoft.Compute/virtualMachines"
+      
       # Deploy to Azure Web app
-    
       - name: logout
         run: |
           az logout
