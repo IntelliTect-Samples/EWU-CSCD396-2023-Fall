@@ -42,7 +42,7 @@ jobs:
       # Extra Credit: Delete the resource
       - name: "Delete The Resource"
         run: |
-          az staticwebapp delete -n a1example
+          az staticwebapp delete -n a1example --yes
 
       - name: Logout
         run: |
