@@ -14,5 +14,8 @@ jobs:
         creds: ${{secrets.ASSIGNMENT1_CREDENTIALS}}
         enable-AzPSSession: true 
      
-    - run: |
-        Get-AzResourceGroup
+    - name: Deploy ARM Template
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          Get-AzResource
