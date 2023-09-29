@@ -42,7 +42,7 @@ jobs:
       # Delete Resources
       - name: 'Delete Resources'
         run: |
-          $resourcename
+          echo $resourcename
 
       # Deploy to Azure Web app
     
