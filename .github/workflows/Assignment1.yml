@@ -32,7 +32,7 @@ jobs:
 # Creates Azure Resource
       - name: 'Creates Azure Resource'
         run: |
-         az --% resource create -g myRG -n myApiApp --resource-type Microsoft.web/sites --is-full-object --properties "{ \"kind\": \"api\", \"location\": \"West US\", \"properties\": { \"serverFarmId\": \"/subscriptions/{subscription_id}/resourcegroups/{resource_group}/providers/Microsoft.Web/serverfarms/{plan_name}\" } }"
+         az --% resource create -n myApiApp --resource-type Microsoft.web/sites --is-full-object --properties "{ \"kind\": \"api\", \"location\": \"West US\", \"properties\": { \"serverFarmId\": \"/subscriptions/{subscription_id}/resourcegroups/{resource_group}/providers/Microsoft.Web/serverfarms/{plan_name}\" } }"
 
 # Lists Azure Resources
       - name: 'List Azure Resources'
@@ -42,7 +42,7 @@ jobs:
 # Deletes Azure Resource
       - name: 'Deletes Azure Resource'
         run: |
-          az resource delete -g myRG -n myApiApp
+          az resource delete -n myApiApp
  
       
       # Deploy to Azure Web app
