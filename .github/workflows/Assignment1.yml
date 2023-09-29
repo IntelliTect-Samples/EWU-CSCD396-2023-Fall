@@ -2,17 +2,13 @@ name: Assignment1
 
 on:
   push:
-    branches: ["Assignment1"]
+    branches:
+      - Assignment1
   workflow_dispatch:
 
 permissions:
   id-token: write
   contents: read
-
-#env:
-#  AZURE_WEBAPP_NAME: test # set this to your application's name
-#  AZURE_WEBAPP_PACKAGE_PATH: "." # set to webapp project root
-#  DOTNET_VERSION: "6.0.9" # set this to the dotnet version to use
 
 jobs:
   build:
@@ -33,13 +29,20 @@ jobs:
         run: |
           az account show
 
+      # Extra Credit: Create a resource
+      - name: "Create A Resource"
+        run: |
+          az staticwebapp create -g EWU-CSCD396-2023-Fall -n a1example
+
       # List Resources
       - name: "List Resources"
         run: |
           az resource list
 
-      # Deploy to Azure Web App
-      # ...
+      # Extra Credit: Delete the resource
+      - name: "Delete The Resource"
+        run: |
+          az staticwebapp delete -n a1example
 
       - name: Logout
         run: |
