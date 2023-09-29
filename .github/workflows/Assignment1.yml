@@ -1,0 +1,31 @@
+name: Azure Login with OIDC
+on: 
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      # Checkout the repo
+      - uses: actions/checkout@Assignment1
+      - uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      
+      # Run dotnet build and publish
+      - name: 'Show Connection Success'
+        run: |
+          az account show
+          
+      # Deploy to Azure Web app
+    
+      - name: logout
+        run: |
+          az logout
