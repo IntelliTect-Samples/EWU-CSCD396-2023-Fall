@@ -28,17 +28,22 @@ jobs:
       - name: 'Show Connection Success'
         run: |
           az account show
+          
+# Creates Azure Resource
+      - name: 'Creates Azure Resource'
+        run: |
+          az resource create -p -g MyResourceGroup -n MyVm --resource-type "Microsoft.Compute/virtualMachines"
 
 # Lists Azure Resources
       - name: 'List Azure Resources'
         run: |
           az resource list   
 
-
- # Creates Azure Resource
-      - name: 'Creates Azure Resource'
+# Deletes Azure Resource
+      - name: 'Deletes Azure Resource'
         run: |
-          az resource create -g MyResourceGroup -n MyVm --resource-type "Microsoft.Compute/virtualMachines"
+          az resource delete -g MyResourceGroup -n MyVm --resource-type "Microsoft.Compute/virtualMachines"
+ 
       
       # Deploy to Azure Web app
       - name: logout
