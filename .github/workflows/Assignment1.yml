@@ -12,6 +12,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@main
+    - run: |
+          echo ${{ secrets.AZURE_CLIENT_ID }}
+          echo ${{ vars.AZURE_TENANT_ID }}
+          echo ${{ vars.AZURE_SUBSCRIPTION_ID }}
+                
     - name: 'Az CLI login'
       uses: azure/login@v1
       with:
@@ -20,5 +25,4 @@ jobs:
           subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
   
     - name: 'Run Azure CLI commands'
-      run: az account show
-          
+      run: az account show          
