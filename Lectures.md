@@ -46,16 +46,30 @@
   - App Configuration
   - Slots
 
+## Week 3-1
+- Q and A
+- Virtual Machines
+- Containers and the Container Use Case
+- Docker and Docker Desktop
+- Container Registry
+- Azure Container Instance
+- Azure Container Apps
+
+## Week 3-2
+- Functions
+- Logic Apps
 
 ## Topics (tentative)
 - x Git
-- GitHub Actions
+---
+- o GitHub Actions
 - GitHub Issues/Boards
 - Scrum/Agile
 - IaC, Terraform and Bicep
 - Branch release patterns
 - Unit, Integration and Functional Tests
 - [More workflow stuff](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/about-workflows)
+- monitoring and debugging
 
 ## Azure Services to Cover
 - Blob Storage
