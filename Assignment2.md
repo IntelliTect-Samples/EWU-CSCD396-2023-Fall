@@ -26,12 +26,9 @@ Complete the following Tutorials and do not clean up resources until assignment 
 
   - Run command from your terminal 'dotnet publish SampleApp/MyFirstAzureWebApp'. This builds the application and files are genearted in SampleApp/MyFirstAzureWebApp/bin/Debug/net7.0/publish folder
   - Zip the items in your created publish folder
-  - Use 'az webapp deploy' command to deploy you zip file to the application
+  - Use 'az webapp deploy' command to deploy your zip file to the application
 
 - Url Accessible ❌✅
-
-Note:
-az webapp deploy --resource-group test-rg --name assn2-test2 --src-path Publish.zip
 
 2. Create and Connect Storage Account - Using Azure CLI when option is available
    {https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-storage?tabs=azure-cli}
@@ -47,7 +44,7 @@ az webapp deploy --resource-group test-rg --name assn2-test2 --src-path Publish.
 
 - Key Vault Created ❌✅
 - Key Vault Secret Created ❌✅
-- Key Vault Access policy created for user 'jcurry@ewu.edu' with secret 'Get' permission ❌✅
+- Key Vault Access policy created for user 'jcurry9@ewu.edu' with secret 'Get' permission ❌✅
 - Web App Granted Access to Key Vault ❌✅
 - Reference key vault secret as an app setting on your web app where the app setting name is the secret name and the value references your secret using the secret uri ❌✅
   (https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references?tabs=azure-cli#source-app-settings-from-key-vault)
