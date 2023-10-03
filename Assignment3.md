@@ -18,10 +18,8 @@ Complete the following Tutorials and do not clean up resources until assignment 
 
 1. Create Virtual Machine
    https://learn.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-manage-vm?source=recommendations
-   https://learn.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-custom-images?source=recommendations
 
 - Virtual Machine Created ❌✅
-- Custom Image of Virtual Machine Created ❌✅
 
 2. Create Container Registry
    https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-powershell
