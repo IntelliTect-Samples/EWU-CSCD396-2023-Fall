@@ -62,6 +62,9 @@ Complete the following Tutorials and do not clean up resources until assignment 
 
 - You can test if your assignment will pass by running the PS script at Scripts/Assignment2Grading.ps1. Run your Assignment2.ps1 script to set local variables first.
 
+5. Please add jcurry9@ewu.edu as a contributor to your subscription, otherwise grading will not be possible.
+
+
 ## Extra Credit
 
 TBD
