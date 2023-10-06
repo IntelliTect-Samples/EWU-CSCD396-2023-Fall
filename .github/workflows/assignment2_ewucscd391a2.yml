@@ -23,7 +23,7 @@ jobs:
           include-prerelease: true
 
       - name: Build with dotnet
-        working-directory: ./Assignment2/CSCD391WebDemo
+        working-directory: ./Assignment2/CSCD391WebDemo/wwwroot
         run: dotnet build --configuration Release
 
       - name: dotnet publish
