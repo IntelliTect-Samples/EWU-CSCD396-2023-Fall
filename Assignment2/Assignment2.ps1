@@ -1,1 +1,7 @@
-$SubscriptionId = "6f0faedd-afd2-46a3-969c-55fedaf53408" $ResourceGroup = "Assignment2" $WebAppName = "cscd391a2" $WebAppUrl = "cscd391a2.azurewebsites.net" $KeyVault = "ewucscd391keyvault" $SecretName = "supersecretsqurrel" $StorageAccount = "storagea2"
+$SubscriptionId = "6f0faedd-afd2-46a3-969c-55fedaf53408"
+$ResourceGroup = "Assignment2"
+$WebAppName = "cscd391a2"
+$WebAppUrl = "cscd391a2.azurewebsites.net"
+$KeyVault = "ewucscd391keyvault"
+$SecretName = "supersecretsqurrel"
+$StorageAccount = "storagea2"
