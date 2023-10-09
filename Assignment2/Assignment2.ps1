@@ -1,0 +1,7 @@
+$SubscriptionId = "a1776291-e4f1-42a2-9867-7e23d9b619cd"
+$ResourceGroup = "nng2_rg_5993"
+$WebAppName = "ass2testapp"
+$WebAppUrl = "https://ass2testapp.azurewebsites.net/"
+$KeyVault = "nng2ass2keyvault"
+$SecretName = "my-secret"
+$StorageAccount = "nng2testappstorage"
