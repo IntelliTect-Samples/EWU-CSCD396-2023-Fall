@@ -48,16 +48,62 @@
 
 ## Week 3-1
 - Q and A
+- Review Assignment 2
 - Virtual Machines
 - Containers and the Container Use Case
 - Docker and Docker Desktop
 - Container Registry
-- Azure Container Instance
-- Azure Container Apps
+- Azure Container Instance*
+- Azure Container Apps**
 
 ## Week 3-2
+- Q and A
+- Finish ACI
 - Functions
 - Logic Apps
+
+## Week 4-1 <next>
+- Messages and Events
+- EventGrid
+- EventHub
+- ServiceBus
+
+- Discuss excercises
+
+parameters
+binding
+function costs
+
+## Week 4-2
+- APIM
+
+## Week 5-1
+- Azure Monitor
+
+## Week 6-1
+
+## Week 6-2
+
+## Week 7-1
+
+## Week 7-2
+
+## Week 8-1
+
+## Week 8-2
+
+## Week 9-1
+
+## Week 9-2
+
+## Week 10-1
+
+## Week 10-2
+
+
+
+
+
 
 ## Topics (tentative)
 - x Git
@@ -76,9 +122,12 @@
 - Key Vault
 - App Service
 - Function and Logic App
-- Cosmos DB
 - Containers
 - Container Instance
+
+---
+
+- Cosmos DB
 - Container Apps
 - Kubernetes
 
@@ -92,3 +141,4 @@
 - Redis Cache
 - CDN
 
+- Azure Chatbot
