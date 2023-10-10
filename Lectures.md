@@ -64,9 +64,8 @@
 
 ## Week 4-1 <next>
 - Messages and Events
-- EventGrid
-- EventHub
 - ServiceBus
+- EventGrid and EventHub intro
 
 - Discuss excercises
 
@@ -75,40 +74,47 @@ binding
 function costs
 
 ## Week 4-2
-- APIM
+- Explore Event Grid
 
 ## Week 5-1
-- Azure Monitor
+- Explore Event Hub
 
 ## Week 6-1
+- API Management
 
 ## Week 6-2
+- Cosmos DB
 
 ## Week 7-1
+- Kubernetes
 
 ## Week 7-2
+- Container Apps
 
 ## Week 8-1
+- App Configuration Service
 
 ## Week 8-2
+- Redis Cache
+- CDN
 
 ## Week 9-1
+- Static Website
 
 ## Week 9-2
 
 ## Week 10-1
+- Infrastructure as Code (IaC)
+- Bicep
+- Terraform
 
 ## Week 10-2
 
 
-
-
-
-
 ## Topics (tentative)
 - x Git
----
 - o GitHub Actions
+---
 - GitHub Issues/Boards
 - Scrum/Agile
 - IaC, Terraform and Bicep
