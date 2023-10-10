@@ -62,33 +62,32 @@
 - Functions
 - Logic Apps
 
-## Week 4-1 <next>
-- Messages and Events
-- ServiceBus
-- EventGrid and EventHub intro
-
+## Week 4-1
+- Explore Functions
 - Discuss excercises
-
-parameters
-binding
-function costs
+- parameters
+- binding
+- function costs
 
 ## Week 4-2
-- Explore Event Grid
+- Messages and Events
+- Service overview
+- Explore ServiceBus
 
 ## Week 5-1
 - Explore Event Hub
 
 ## Week 6-1
-- API Management
+- Explore Event Grid
 
 ## Week 6-2
-- Cosmos DB
+- API Management
 
 ## Week 7-1
-- Kubernetes
+- Cosmos DB
 
 ## Week 7-2
+- Kubernetes
 - Container Apps
 
 ## Week 8-1
