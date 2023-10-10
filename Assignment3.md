@@ -57,7 +57,7 @@ Note: Be sure you have docker desktop installed and running
   https://learn.microsoft.com/en-us/azure/event-hubs/send-and-receive-events-using-data-generator
   [Screenshot Example](https://learn.microsoft.com/en-us/azure/event-hubs/send-and-receive-events-using-data-generator#view-events-using-event-hubs-data-generator)
 
-6. 4. Create a PowerShell script called Assignment3.ps1 on your branch within the Assignment3 folder ❌✅
+6. Create a PowerShell script called Assignment3.ps1 on your branch within the Assignment3 folder ❌✅
 
 - Copy the following text into your PowerShell script and fill in your specific values for the variables
    $SubscriptionId = ""
