@@ -16,15 +16,14 @@ jobs:
     - name: Set up Azure CLI
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }} # You need to set up Azure credentials as a secret in your repository.
+        client-id: ${{ secrets.AZURE_CLIENT_ID_CREATED_SP }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
     - name: List Azure Resources
       run: |
         az account show
         az resource list --output table
-
-
-        # Then run your PowerShell script with 'pwsh -File Assignment1.ps1'.
 
       env:
         subscription_id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
