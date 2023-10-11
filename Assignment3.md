@@ -12,7 +12,7 @@ The purpose of this assignment is to solidify your learning of:
 - Azure Container Instances
 - Event Hub
 
-## Prerequistes
+## Prerequisites
 
 Please add jcurry9@ewu.edu as a contributor to your subscription, otherwise grading will not be possible.
 
@@ -60,20 +60,26 @@ Note: Be sure you have docker desktop installed and running
 6. Create a PowerShell script called Assignment3.ps1 on your branch within the Assignment3 folder ❌✅
 
 - Copy the following text into your PowerShell script and fill in your specific values for the variables
-      $SubscriptionId = ""
-      $ResourceGroup = ""
-      $EventGridAppUrl = ""
-      $VirtualMachineName = ""
-      $ContainerRegistryName = ""
-      $ContainerRegistryPassword = ""
-      $EventHubNamespaceName = ""
-      $EventHubName = ""
-      $EventGridSystemTopicName = ""
-      $ContainerGroupName = ""
+```
+$SubscriptionId = ""
+$ResourceGroup = ""
+$EventGridAppUrl = ""
+$VirtualMachineName = ""
+$ContainerRegistryName = ""
+$ContainerRegistryPassword = ""
+$EventHubNamespaceName = ""
+$EventHubName = ""
+$EventGridSystemTopicName = ""
+$ContainerGroupName = ""
+```
 
 
 ## Script Grading
 You can test if your assignment will pass by running the PS script at Scripts/Assignment3Grading.ps1. Run your Assignment3.ps1 script to set local variables first.
 
+Be sure to install the Az Powershell modules that are listed as dependencies 
 
+## Extra Credit
 
+- Create a custom image from your virtual machine name d 'vm-image:v1" and push the image to your container registry.
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-custom-images
