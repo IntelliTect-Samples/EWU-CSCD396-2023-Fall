@@ -65,14 +65,16 @@ Complete the following Tutorials and do not clean up resources until assignment 
 5. Create a PowerShell script called Assignment4.ps1 on your branch within the Assignment4 folder ❌✅
 
 - Copy the following text into your PowerShell script and fill in your specific values for the variables
-      $SubscriptionId = ""
-      $ResourceGroup = ""
-      $LogAnalyticsWorkspaceName = ""
-      $LogAnalyticsTableName = ""
-      $DataCollectionRuleName = ""
-      $DataCollectionEndpointName = ""
-      $FunctionAppName = ""
-      $ApiManagementGatewayName = ""
+```
+$SubscriptionId = ""
+$ResourceGroup = ""
+$LogAnalyticsWorkspaceName = ""
+$LogAnalyticsTableName = ""
+$DataCollectionRuleName = ""
+$DataCollectionEndpointName = ""
+$FunctionAppName = ""
+$ApiManagementGatewayName = ""
+```
 
 ## Script Grading
 You can test if your assignment will pass by running the PS script at Scripts/Assignment4Grading.ps1. Run your Assignment4.ps1 script to set local variables first.

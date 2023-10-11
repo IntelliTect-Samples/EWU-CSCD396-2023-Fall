@@ -12,7 +12,7 @@ The purpose of this assignment is to solidify your learning of:
 - Azure Container Instances
 - Event Hub
 
-## Prerequistes
+## Prerequisites
 
 Please add jcurry9@ewu.edu as a contributor to your subscription, otherwise grading will not be possible.
 
