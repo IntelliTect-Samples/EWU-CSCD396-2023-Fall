@@ -60,16 +60,18 @@ Note: Be sure you have docker desktop installed and running
 6. Create a PowerShell script called Assignment3.ps1 on your branch within the Assignment3 folder ❌✅
 
 - Copy the following text into your PowerShell script and fill in your specific values for the variables
-      $SubscriptionId = ""
-      $ResourceGroup = ""
-      $EventGridAppUrl = ""
-      $VirtualMachineName = ""
-      $ContainerRegistryName = ""
-      $ContainerRegistryPassword = ""
-      $EventHubNamespaceName = ""
-      $EventHubName = ""
-      $EventGridSystemTopicName = ""
-      $ContainerGroupName = ""
+```
+$SubscriptionId = ""
+$ResourceGroup = ""
+$EventGridAppUrl = ""
+$VirtualMachineName = ""
+$ContainerRegistryName = ""
+$ContainerRegistryPassword = ""
+$EventHubNamespaceName = ""
+$EventHubName = ""
+$EventGridSystemTopicName = ""
+$ContainerGroupName = ""
+```
 
 
 ## Script Grading
