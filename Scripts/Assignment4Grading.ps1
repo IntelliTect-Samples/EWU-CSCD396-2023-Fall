@@ -1,11 +1,17 @@
-$SubscriptionId = ""
-$ResourceGroup = ""
-$LogAnalyticsWorkspaceName = ""
-$LogAnalyticsTableName = ""
-$DataCollectionRuleName = ""
-$DataCollectionEndpointName = ""
-$FunctionAppName = ""
-$ApiManagementGatewayName = ""
+# PS Module Requirements
+# - Az.ApiMangement v.4.0.2
+# - Az.Functions v.4.0.6
+# - Az.Monitor v3.0.1
+# - Az.OperationalInsights 3.2.0
+
+# $SubscriptionId = ""
+# $ResourceGroup = ""
+# $LogAnalyticsWorkspaceName = ""
+# $LogAnalyticsTableName = ""
+# $DataCollectionRuleName = ""
+# $DataCollectionEndpointName = ""
+# $FunctionAppName = ""
+# $ApiManagementGatewayName = ""
 
 $RequirementsMet = 0
 $TotalRequirements = 12

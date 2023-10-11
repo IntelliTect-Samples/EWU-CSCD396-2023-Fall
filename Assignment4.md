@@ -49,9 +49,9 @@ Complete the following Tutorials and do not clean up resources until assignment 
   - See SampleResources/Assn4FunctionProj/SendLogs/function.json for sample
 - Assigned 'Monitoring Metrics Publisher' and 'Contributor' role to the function app managed identity over the scope of your resource group. This identity will be executing the PowerShell function. https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#assign-permissions-to-the-dcr ❌✅
 - Executed the function through PowerShell commands: 
-$Date = Get-Date ([datetime]::UtcNow) -Format O 
-$Body = @{LogLevel='Error';TimeGenerated=$Date} | ConvertTo-Json
-Invoke-RestMethod -Method POST -Uri 'https://<Fn App Name>.azurewebsites.net/api/<Function Name>?code=<My Function API Key here>' -Body <Body> 
+      $Date = Get-Date ([datetime]::UtcNow) -Format O 
+      $Body = @{LogLevel='Error';TimeGenerated=$Date} | ConvertTo-Json
+      Invoke-RestMethod -Method POST -Uri 'https://<Fn App Name>.azurewebsites.net/api/<Function Name>?code=<My Function API Key here>' -Body <Body> 
   - See monitor tab on the function to view requests. 
   - If this is a success, your log should be present in your custom table
 - Log Found in your Created Custom Table ❌✅
@@ -65,14 +65,14 @@ Invoke-RestMethod -Method POST -Uri 'https://<Fn App Name>.azurewebsites.net/api
 5. Create a PowerShell script called Assignment4.ps1 on your branch within the Assignment4 folder ❌✅
 
 - Copy the following text into your PowerShell script and fill in your specific values for the variables
-   $SubscriptionId = ""
-   $ResourceGroup = ""
-   $LogAnalyticsWorkspaceName = ""
-   $LogAnalyticsTableName = ""
-   $DataCollectionRuleName = ""
-   $DataCollectionEndpointName = ""
-   $FunctionAppName = ""
-   $ApiManagementGatewayName = ""
+      $SubscriptionId = ""
+      $ResourceGroup = ""
+      $LogAnalyticsWorkspaceName = ""
+      $LogAnalyticsTableName = ""
+      $DataCollectionRuleName = ""
+      $DataCollectionEndpointName = ""
+      $FunctionAppName = ""
+      $ApiManagementGatewayName = ""
 
 ## Script Grading
 You can test if your assignment will pass by running the PS script at Scripts/Assignment4Grading.ps1. Run your Assignment4.ps1 script to set local variables first.
