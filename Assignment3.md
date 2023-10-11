@@ -75,5 +75,9 @@ Note: Be sure you have docker desktop installed and running
 ## Script Grading
 You can test if your assignment will pass by running the PS script at Scripts/Assignment3Grading.ps1. Run your Assignment3.ps1 script to set local variables first.
 
+Be sure to install the Az Powershell modules that are listed as dependencies 
 
+## Extra Credit
 
+- Create a custom image from your virtual machine name d 'vm-image:v1" and push the image to your container registry.
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-custom-images

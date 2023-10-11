@@ -9,9 +9,9 @@ The purpose of this assignment is to solidify your learning of:
 - Using Data Collection Rule/Endpoint to Ingest Logs
 - API Managment Instance
 
-## Prerequisites
+## Prerequistes
 
-- Install Azure Function VS Code Extension
+Please add jcurry9@ewu.edu as a contributor to your subscription, otherwise grading will not be possible.
 
 ## Instructions
 
@@ -77,5 +77,6 @@ Complete the following Tutorials and do not clean up resources until assignment 
 ## Script Grading
 You can test if your assignment will pass by running the PS script at Scripts/Assignment4Grading.ps1. Run your Assignment4.ps1 script to set local variables first.
 
+Be sure to install the Az Powershell modules that are listed as dependencies in order to run the script
 
 ## Extra Credit
