@@ -16,33 +16,13 @@ jobs:
     - name: Set up Azure CLI
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.AZURE_CREDENTIALS }} # You need to set up Azure credentials as a secret in your repository.
 
-    - name: Run PowerShell script
+    - name: List Azure Resources
       run: |
-        # Authenticate to Azure using the App ID and perform necessary actions.
-        # For example, you can use 'az login' with the App ID credentials.
+        az account show
+        az resource list --output table
 
-        name: Your Workflow Name
-on:
-  workflow_dispatch:
-jobs:
-  your-job-name:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install Azure CLI
-        run: |
-          # Check if the Azure CLI is already installed
-          if ! az --version; then
-            # If not installed, install the Azure CLI
-            curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-          fi
-
-      # Your other workflow steps go here
-      - name: Another Step
-        run: echo "This is another step in your workflow."
-
-      # Add more steps as needed
 
         # Then run your PowerShell script with 'pwsh -File Assignment1.ps1'.
 
