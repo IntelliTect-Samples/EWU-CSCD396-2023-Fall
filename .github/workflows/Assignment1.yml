@@ -1,0 +1,28 @@
+name: Assignment 1
+
+on:
+  push:
+    branches:
+      - Assignment1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Azure CLI
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Run PowerShell script
+      run: |
+        # Authenticate to Azure using the App ID and perform necessary actions.
+        # For example, you can use 'az login' with the App ID credentials.
+        # Then run your PowerShell script with 'pwsh -File Assignment1.ps1'.
+
+      env:
+        subscription_id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
