@@ -1,19 +1,21 @@
-$SubscriptionId = "d00af0f7-1cd6-4415-b760-3ad7fc274cbf"
-$ResourceGroup = "test-rg"
-$LogAnalyticsWorkspaceName = "la-test-jc"
-$LogAnalyticsTableName = "IngestionLog_CL_CL"
-$DataCollectionRuleName = "DCR-jc"
-$DataCollectionEndpointName = "testendpoint"
-$FunctionAppName = "fn-app-jc"
+$SubscriptionId = ""
+$ResourceGroup = ""
+$LogAnalyticsWorkspaceName = ""
+$LogAnalyticsTableName = ""
+$DataCollectionRuleName = ""
+$DataCollectionEndpointName = ""
+$FunctionAppName = ""
+$ApiManagementGatewayName = ""
 
 $RequirementsMet = 0
-$TotalRequirements = 10
-
+$TotalRequirements = 12
+ 
+# You'll manually have to log in twice here (prompts should pop up in a browser and a PowerShell window)
 az login 
 Connect-AzAccount
 Set-AzContext -Subscription $SubscriptionId
 
-$LogAnalyticsResult = Get-AzOperationalInsightsWorkspace -Name $WorkspaceName -ResourceGroupName $ResourceGroup
+$LogAnalyticsResult = Get-AzOperationalInsightsWorkspace -Name $LogAnalyticsWorkspaceName -ResourceGroupName $ResourceGroup
 if($LogAnalyticsResult){
     $RequirementsMet++
        Write-Host "Successfully found the log analytics namespace"
@@ -43,7 +45,7 @@ if($DataCollectionEndpointResult){
 
 $TableObject = $TableResult | ConvertFrom-Json 
 $TableObject.schema.tableSubType
-if($TableObject -and $TableObject.schema.tableSubType -like "DataCollectionRuleBased"){
+if($TableObject -and ($TableObject.schema.tableSubType -like "DataCollectionRuleBased")){
     $RequirementsMet++
        Write-Host "Successfully found the log analytics table configured to use DCR"
    }
@@ -101,14 +103,34 @@ else {
 }
 
 $WorkspaceGuid = (Get-AzOperationalInsightsWorkspace -Name la-test-jc -ResourceGroupName test-rg).CustomerID
-$QueryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId $WorkspaceGuid -Query $LogAnalyticsTableName).Results
+$QueryResults = (Invoke-AzOperationalInsightsQuery -WorkspaceId $WorkspaceGuid -Query $LogAnalyticsTableName).Results
 
-if ($QueryResults.Count -gt 0) {
+if ($QueryResults) {
     $RequirementsMet++
     Write-Host "Successfully found Logs in your Custom Table"
 }
 else {
     Write-Host "Failed to find Logs in your Custom Table"
+}
+
+$ApimResult = Get-AzApiManagement -ResourceGroupName $ResourceGroup -Name $ApiManagementGatewayName
+if ($ApimResult) {
+    $RequirementsMet++
+    Write-Host "Successfully found APIM Gateway"
+}
+else {
+    Write-Host "Failed to find APIM Gateway"
+}
+
+$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName $ResourceGroup -ServiceName $ApiManagementGatewayName
+$ApiFunctionResult = Get-AzApiManagementApi -Context $ApiMgmtContext | Where-Object {$_.ApiId -like $FunctionAppName }
+
+if ($ApiFunctionResult ) {
+    $RequirementsMet++
+    Write-Host "Successfully found Function API in API Management Gateway"
+}
+else {
+    Write-Host "Failed to find Function API in API Management Gateway"
 }
 
 Write-Host "Requirements Met on Assignment $RequirementsMet/$TotalRequirements"

@@ -44,8 +44,8 @@ Complete the following Tutorials and do not clean up resources until assignment 
 - Add Az.Accounts as a package install by editing the requirements.psd1 app file - https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell?tabs=portal#dependency-management 
 
   - Copy SampleResources/Assn4FunctionProj/SendLogs/run.ps1 file contents to your function. Replace the values in the curly braces. The Assn4FunctionProj directory is an example step 1 of [creating your local functions project](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-powershell#create-an-azure-functions-project)
-  - Replace table name, DCE uri, and DCR Immutable Id values in run.ps1 with your values. (Provide Screenshot) ❌✅
-- Created PowerShell Function with Http Inbound and Outbound Bindings (Provide Screenshot) ❌✅
+  - Replace table name, DCE uri, and DCR Immutable Id values in run.ps1 with your values. 
+- Created PowerShell Function with Http Inbound and Outbound Bindings 
   - See SampleResources/Assn4FunctionProj/SendLogs/function.json for sample
 - Assigned 'Monitoring Metrics Publisher' and 'Contributor' role to the function app managed identity over the scope of your resource group. This identity will be executing the PowerShell function. https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#assign-permissions-to-the-dcr ❌✅
 - Executed the function through PowerShell commands: 
@@ -58,13 +58,21 @@ Invoke-RestMethod -Method POST -Uri 'https://<Fn App Name>.azurewebsites.net/api
 
 4. Create API Management Instance ❌✅
    https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance-cli
+- Import Function App as an API in your API Management Instance ❌✅
+ https://learn.microsoft.com/en-us/azure/api-management/import-function-app-as-api 
 
-5. Create a PowerShell script called Assignment4.ps1 on your branch within the Assignment3 folder ❌✅
+
+5. Create a PowerShell script called Assignment4.ps1 on your branch within the Assignment4 folder ❌✅
 
 - Copy the following text into your PowerShell script and fill in your specific values for the variables
    $SubscriptionId = ""
    $ResourceGroup = ""
-   ...
+   $LogAnalyticsWorkspaceName = ""
+   $LogAnalyticsTableName = ""
+   $DataCollectionRuleName = ""
+   $DataCollectionEndpointName = ""
+   $FunctionAppName = ""
+   $ApiManagementGatewayName = ""
 
 ## Script Grading
 You can test if your assignment will pass by running the PS script at Scripts/Assignment4Grading.ps1. Run your Assignment4.ps1 script to set local variables first.
