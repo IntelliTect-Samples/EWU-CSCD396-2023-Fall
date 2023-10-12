@@ -52,15 +52,19 @@ Complete the following Tutorials and do not clean up resources until assignment 
 4. Create a PowerShell script called Assignment2.ps1 on your branch within the Assignment2 folder ❌✅
 
 - Copy the following text into your PowerShell script and fill in your specific values for the variables
-  $SubscriptionId = ""
-  $ResourceGroup = ""
-  $WebAppName = ""
-  $WebAppUrl = ""
-  $KeyVault = ""
-  $SecretName = ""
-  $StorageAccount = ""
-
+```
+$SubscriptionId = ""
+$ResourceGroup = ""
+$WebAppName = ""
+$WebAppUrl = ""
+$KeyVault = ""
+$SecretName = ""
+$StorageAccount = ""
+```
 - You can test if your assignment will pass by running the PS script at Scripts/Assignment2Grading.ps1. Run your Assignment2.ps1 script to set local variables first.
+
+5. Please add jcurry9@ewu.edu as a contributor to your subscription, otherwise grading will not be possible.
+
 
 ## Extra Credit
 

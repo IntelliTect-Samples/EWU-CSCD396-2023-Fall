@@ -25,7 +25,7 @@
   - Resource Groups
   - Subscriptions
 
-## Week 2-1
+## Week 2-1, 2
 - Q and A (max 10 min)
 - Review tools and environment configuration
 - Getting connected to Azure
@@ -40,29 +40,80 @@
   - [Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-cli)
   
 
-## Week 2-2
+## Week 2-2, 3
 - Azure App Service (Grant)
   - Build and deploy
   - App Configuration
   - Slots
 
-## Week 3-1
+## Week 3-1, 4
 - Q and A
+- Review Assignment 2
 - Virtual Machines
 - Containers and the Container Use Case
 - Docker and Docker Desktop
 - Container Registry
-- Azure Container Instance
-- Azure Container Apps
+- Azure Container Instance*
+- Azure Container Apps**
 
-## Week 3-2
+## Week 3-2, 5
+- Q and A
+- Finish ACI
 - Functions
 - Logic Apps
 
+## Week 4-1, 6
+- Explore Functions
+- Discuss excercises
+- parameters
+- binding
+- function costs
+
+## Week 4-2, 7
+- Messages and Events
+- Service Bus overview
+- Explore ServiceBus
+
+## Week 5-1
+- Explore Event Hub
+
+## Week 6-1
+- Explore Event Grid
+
+## Week 6-2
+- API Management
+
+## Week 7-1
+- Cosmos DB
+
+## Week 7-2
+- Kubernetes
+- Container Apps
+
+## Week 8-1
+- App Configuration Service
+
+## Week 8-2
+- Redis Cache
+- CDN
+
+## Week 9-1
+- Static Website
+
+## Week 9-2
+
+## Week 10-1
+- Infrastructure as Code (IaC)
+- Bicep
+- Terraform
+
+## Week 10-2
+
+
 ## Topics (tentative)
 - x Git
----
 - o GitHub Actions
+---
 - GitHub Issues/Boards
 - Scrum/Agile
 - IaC, Terraform and Bicep
@@ -76,9 +127,12 @@
 - Key Vault
 - App Service
 - Function and Logic App
-- Cosmos DB
 - Containers
 - Container Instance
+
+---
+
+- Cosmos DB
 - Container Apps
 - Kubernetes
 
@@ -92,3 +146,4 @@
 - Redis Cache
 - CDN
 
+- Azure Chatbot
