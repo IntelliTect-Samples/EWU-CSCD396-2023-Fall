@@ -1,10 +1,10 @@
-﻿# $SubscriptionId = ""
-# $ResourceGroup = ""
-# $WebAppName = ""
-# $WebAppUrl = ""
-# $KeyVault = ""
-# $SecretName = ""
-# $StorageAccount = ""
+﻿$SubscriptionId = "45e4b7a3-f3f7-4c30-bc12-2430c6751d03"
+$ResourceGroup = "CSCD396-Fall"
+$WebAppName = "Assignment2-396Fall"
+$WebAppUrl = "assignment2-396fall.azurewebsites.net"
+$KeyVault = "assignment2-keyvault"
+$SecretName = "Assignment2Secret"
+$StorageAccount = "cscd396storage"
 
 $RequirementsMet = 0
 $TotalRequirements = 10
