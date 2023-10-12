@@ -9,9 +9,9 @@ The purpose of this assignment is to solidify your learning of:
 - Using Data Collection Rule/Endpoint to Ingest Logs
 - API Managment Instance
 
-## Prerequisites
+## Prerequistes
 
-- Install Azure Function VS Code Extension
+Please add jcurry9@ewu.edu as a contributor to your subscription, otherwise grading will not be possible.
 
 ## Instructions
 
@@ -22,14 +22,15 @@ Complete the following Tutorials and do not clean up resources until assignment 
    https://learn.microsoft.com/en-us/cli/azure/monitor/log-analytics/workspace/table?view=azure-cli-latest#az-monitor-log-analytics-workspace-table-create
 
 - Log Analytics Workspace Created ❌✅
-- Create Custom Table using az cli command ❌✅
-  - Give the new table columns TimeGenerated, LogLevel, Tags ❌✅
+- Create Custom Table with columns 'TimeGenerated' (DateTime type)and 'LogLevel' (string type)❌✅
 
-2. Create an Data Collection Rule and Endpoint
-   https://learn.microsoft.com/en-us/azure/container-registry/container-registry-event-grid-quickstart
-   https://learn.microsoft.com/en-us/azure/container-registry/container-registry-event-grid-quickstart#subscribe-to-registry-events
+2. Create a Data Collection Rule and Endpoint
+   https://learn.microsoft.com/en-us/azure/azure-monitor/logs/set-up-logs-ingestion-api-prerequisites
 
+- Data Collection Endpoint Created ❌✅
+- Custom Table is Created with Data Collection Rule ❌✅ (Using the portal, recreation is required to use DCR on the Custom Table)
 - Data Collection Rule Created ❌✅
+
 
 3. Create Function App
    https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-powershell#publish-the-project-to-azure
@@ -38,17 +39,46 @@ Complete the following Tutorials and do not clean up resources until assignment 
 
 - Function App Created ❌✅
   - Use [this tutorial](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-powershell) to setup your function app
-- Configured Function App Diagnostic settings to the previously created log analytics workspace ❌✅
-- Add Az.Accounts as a package install by editing the requirements.psd1 app file - https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell?tabs=portal#dependency-management ❌✅
+- Configured Function App Diagnostic setting to the previously created log analytics workspace ❌✅
+- Enable System Assigned identity on Function App ❌✅
+- Add Az.Accounts as a package install by editing the requirements.psd1 app file - https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell?tabs=portal#dependency-management 
+
   - Copy SampleResources/Assn4FunctionProj/SendLogs/run.ps1 file contents to your function. Replace the values in the curly braces. The Assn4FunctionProj directory is an example step 1 of [creating your local functions project](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-powershell#create-an-azure-functions-project)
-  - Replace table name, DCE uri, and DCR Immutable Id values in run.ps1 with your values.
-- Created PowerShell Function with Http Inbound and Outbound Bindings ❌✅
+  - Replace table name, DCE uri, and DCR Immutable Id values in run.ps1 with your values. 
+- Created PowerShell Function with Http Inbound and Outbound Bindings 
   - See SampleResources/Assn4FunctionProj/SendLogs/function.json for sample
-- Assigned 'Monitoring Metrics Publisher' and 'Contributor' role to the function app managed identity over the scope of your reosurce group. This identity will be executing the PowerShell function. https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#assign-permissions-to-the-dcr ❌✅
-- Executed function with PowerShell command : Invoke-RestMethod -Uri 'https://<Fn App Name>.azurewebsites.net/api/<Function Name>?code=<My API Key here>' -Body <Body> ❌✅
-  - See monitor tab on the function to view requests.
+- Assigned 'Monitoring Metrics Publisher' and 'Contributor' role to the function app managed identity over the scope of your resource group. This identity will be executing the PowerShell function. https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal#assign-permissions-to-the-dcr ❌✅
+- Executed the function through PowerShell commands: 
+      $Date = Get-Date ([datetime]::UtcNow) -Format O 
+      $Body = @{LogLevel='Error';TimeGenerated=$Date} | ConvertTo-Json
+      Invoke-RestMethod -Method POST -Uri 'https://<Fn App Name>.azurewebsites.net/api/<Function Name>?code=<My Function API Key here>' -Body <Body> 
+  - See monitor tab on the function to view requests. 
+  - If this is a success, your log should be present in your custom table
+- Log Found in your Created Custom Table ❌✅
 
 4. Create API Management Instance ❌✅
    https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance-cli
+- Import Function App as an API in your API Management Instance ❌✅
+ https://learn.microsoft.com/en-us/azure/api-management/import-function-app-as-api 
+
+
+5. Create a PowerShell script called Assignment4.ps1 on your branch within the Assignment4 folder ❌✅
+
+- Copy the following text into your PowerShell script and fill in your specific values for the variables
+```
+$SubscriptionId = ""
+$ResourceGroup = ""
+$LogAnalyticsWorkspaceName = ""
+$LogAnalyticsTableName = ""
+$DataCollectionRuleName = ""
+$DataCollectionEndpointName = ""
+$FunctionAppName = ""
+$ApiManagementGatewayName = ""
+```
+
+## Script Grading
+You can test if your assignment will pass by running the PS script at Scripts/Assignment4Grading.ps1. Run your Assignment4.ps1 script to set local variables first.
+
+Be sure to install the Az Powershell modules that are listed as dependencies in order to run the script
 
 ## Extra Credit
