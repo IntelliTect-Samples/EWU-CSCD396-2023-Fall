@@ -20,6 +20,8 @@
 $RequirementsMet = 0
 $TotalRequirements = 10
 
+
+# You'll manually have to log in twice here (prompt should pop up in a browser)
 Connect-AzAccount
 Set-AzContext -Subscription $SubscriptionId
 $token = (Get-AzAccessToken).Token
