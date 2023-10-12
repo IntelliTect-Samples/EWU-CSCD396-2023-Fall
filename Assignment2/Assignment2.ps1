@@ -1,0 +1,7 @@
+$SubscriptionId = "5f42cdd9-9faa-4a87-8106-7209d28a03cd"
+ $ResourceGroup = "praythopson_rg_7717" 
+ $WebAppName = "PaulsonsFirstAzureWebApp" 
+ $WebAppUrl = "paulsonsfirstazurewebapp.azurewebsites.net" 
+ $KeyVault = "paulsonskeyvault" 
+ $SecretName = "Paulsons-secret" 
+ $StorageAccount = "paulsonswebappstorage"
