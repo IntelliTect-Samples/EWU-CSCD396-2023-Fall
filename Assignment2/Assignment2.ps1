@@ -1,0 +1,7 @@
+$SubscriptionId = "76f7ad17-1d4f-4019-8795-69d05c325aa0" 
+$ResourceGroup = "jmcvay1_rg_0240" 
+$WebAppName = "jryanmcvay7373" 
+$WebAppUrl = "https://jryanmcvay7373.azurewebsites.net/" 
+$KeyVault = "jmcvay1-keyvault-as2" 
+$SecretName = "kvpw" 
+$StorageAccount = "as2webappstorage"
