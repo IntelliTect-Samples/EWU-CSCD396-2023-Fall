@@ -9,7 +9,7 @@ The purpose of this assignment is to solidify your learning of:
 - Using Data Collection Rule/Endpoint to Ingest Logs
 - API Managment Instance
 
-## Prerequistes
+## Prerequisites
 
 Please add jcurry9@ewu.edu as a contributor to your subscription, otherwise grading will not be possible.
 
@@ -82,3 +82,7 @@ You can test if your assignment will pass by running the PS script at Scripts/As
 Be sure to install the Az Powershell modules that are listed as dependencies in order to run the script
 
 ## Extra Credit
+
+- Create Azure Queue Storage and Create a new Function that is Triggered by a Queue Storage Addition ❌✅
+https://learn.microsoft.com/en-us/azure/storage/queues/storage-quickstart-queues-portal
+https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cextensionv5&pivots=programming-language-powershell
