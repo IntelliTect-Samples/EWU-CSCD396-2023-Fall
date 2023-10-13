@@ -1,0 +1,7 @@
+$SubscriptionId = "650d46da-5655-49c1-bbe2-97a2d3bfed42"
+$ResourceGroup = "Assignment2"
+$WebAppName = "apk-assignment2"
+$WebAppUrl = "https://apk-assignment2.azurewebsites.net/"
+$KeyVault = "apkassignment2vault"
+$SecretName = "rickroll"
+$StorageAccount = "apkassignment2storage"
