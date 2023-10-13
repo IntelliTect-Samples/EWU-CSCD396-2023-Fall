@@ -1,0 +1,7 @@
+$SubscriptionId = "df29ccc0-1d4d-42b8-987d-c1f04f575600"
+$ResourceGroup = "zriggle1_rg_6551"
+$WebAppName = "ZriggMyFirstAzureWebApp"
+$WebAppUrl = "zriggmyfirstazurewebapp.azurewebsites.net"
+$KeyVault = "zriggkeyvault"
+$SecretName = "secret1"
+$StorageAccount = "zriggappstorage"
