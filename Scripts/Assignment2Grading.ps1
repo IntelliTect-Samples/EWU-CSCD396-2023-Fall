@@ -122,7 +122,7 @@ else {
     Write-Host "Failed to find key vault secrets access policy for grader identity"
 }
 
-$expectedValue = "@Microsoft.KeyVault(SecretUri=https://$KeyVault.vault.azure.net/secrets/$SecretName/)"
+$expectedValue = "@Microsoft.KeyVault(SecretUri=https://$KeyVault.vault.azure.net/secrets/$SecretName/*)"
 
 $appSettingValue = az webapp config appsettings list -n $WebAppName --resource-group $ResourceGroup | ConvertFrom-Json | Where-Object { $_.name -like $SecretName } | Select-Object -ExpandProperty value
 if ($appSettingValue -like $expectedValue ) {
