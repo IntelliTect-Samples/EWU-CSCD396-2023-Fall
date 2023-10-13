@@ -1,0 +1,7 @@
+$SubscriptionId = "33f5d72d-0e42-4587-a7bf-15bf6e39559f"
+$ResourceGroup = "hthompson9_rg_2148"
+$WebAppName = "EWU-CSCD396-2023-Fall-Hunter-T"
+$WebAppUrl = "https://ewu-cscd396-2023-fall-hunter-t.azurewebsites.net"
+$KeyVault = "lab2keyvault"
+$SecretName = "BigOldSecret"
+$StorageAccount = "ewucscd3962023lab2"
