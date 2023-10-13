@@ -1,0 +1,7 @@
+$SubscriptionId = "9277d217-b1b2-40f2-b048-0df793762b1b"
+$ResourceGroup = "CarlosDAlvarez01_rg_1525"
+$WebAppName = "cscd396Assignemnt2"
+$WebAppUrl = "https://cscd396assignemnt2.azurewebsites.net/"
+$KeyVault = "cscd396-keyvault"
+$SecretName = "cscd396-assignment2-keyvault-secret"
+$StorageAccount = "cscd396assignmentstorage"
