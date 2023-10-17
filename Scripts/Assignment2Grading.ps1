@@ -8,14 +8,14 @@
 
 $RequirementsMet = 0
 $TotalRequirements = 10
-
-Connect-AzAccount
-Set-AzContext -Subscription $SubscriptionId
-$GraderObjectId = ((Get-AzContext).Account.ExtendedProperties.HomeAccountId.Split('.'))[0]
+# az login
+Connect-AzAccount -Subscription $SubscriptionId -Tenant "cbb8585a-58be-4c67-a9e8-aa46ea967bb1"
+$#Set-AzContext -Subscription $SubscriptionId -Tenant "cbb8585a-58be-4c67-a9e8-aa46ea967bb1"
+GraderObjectId = ((Get-AzContext).Account.ExtendedProperties.HomeAccountId.Split('.'))[0]
 
 # Create an Azure AD token for authentication
 $token = (Get-AzAccessToken).Token
-
+az account set --subscription $SubscriptionId
 az group show -n $ResourceGroup
 $WebAppResult = az webapp show -n $WebAppName --resource-group $ResourceGroup --query name -o tsv
 if ($WebAppResult) {
@@ -122,9 +122,10 @@ else {
     Write-Host "Failed to find key vault secrets access policy for grader identity"
 }
 
-$expectedValue = "@Microsoft.KeyVault(SecretUri=https://$KeyVault.vault.azure.net/secrets/$SecretName/)"
+$expectedValue = "@Microsoft.KeyVault(SecretUri=https://$KeyVault.vault.azure.net/secrets/$SecretName/*)"
 
-$appSettingValue = az webapp config appsettings list -n $WebAppName --resource-group $ResourceGroup | ConvertFrom-Json | Where-Object { $_.name -like $SecretName } | Select-Object -ExpandProperty value
+$appSettingResult = az webapp config appsettings list -n $WebAppName --resource-group $ResourceGroup | ConvertFrom-Json 
+$appSettingValue = $appSettingResult | Where-Object { $_.name -like $SecretName } | Select-Object -ExpandProperty value
 if ($appSettingValue -like $expectedValue ) {
     $RequirementsMet++
     Write-Host "Successfully found app setting with key vault secret reference"
