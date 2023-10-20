@@ -74,17 +74,24 @@
 - Service Bus overview
 - Explore ServiceBus
 
-## Week 5-1
-- Explore Event Hub
-
-## Week 6-1
+## Week 5-1, 8
+- Review events and messages
 - Explore Event Grid
 
+## Week 5-2, 9
+- Static Web Apps
+- APIs
+- Content Delivery Networks (CDN)
+
+## Week 6-1
+- Finish off Event Grid 
+- API Management intro
+
 ## Week 6-2
-- API Management
+- Cosmos DB
 
 ## Week 7-1
-- Cosmos DB
+- Explore Event Hub
 
 ## Week 7-2
 - Kubernetes
@@ -95,17 +102,16 @@
 
 ## Week 8-2
 - Redis Cache
-- CDN
 
 ## Week 9-1
-- Static Website
-
-## Week 9-2
-
-## Week 10-1
 - Infrastructure as Code (IaC)
 - Bicep
 - Terraform
+
+## Week 9-2
+- Azure Monitor
+
+## Week 10-1
 
 ## Week 10-2
 
@@ -118,7 +124,7 @@
 - Scrum/Agile
 - IaC, Terraform and Bicep
 - Branch release patterns
-- Unit, Integration and Functional Tests
+- Unit, Integration, and Functional Tests
 - [More workflow stuff](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/about-workflows)
 - monitoring and debugging
 
@@ -129,21 +135,22 @@
 - Function and Logic App
 - Containers
 - Container Instance
-
----
-
-- Cosmos DB
-- Container Apps
-- Kubernetes
-
-- API Management
 - Service Bus
 - Event Hub
-- Event Grid
 - Storage Queue
+
+---
+- Cosmos DB
+- API Management
+- Event Grid
+- Container Apps
+- Kubernetes
 - App Configuration Service
 - Azure Monitor and App Insights
 - Redis Cache
 - CDN
 
+### Extra/Bonus
 - Azure Chatbot
+- Azure Automation
+
