@@ -20,13 +20,16 @@ https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-event-quickst
 ***
 # Event Grid Viewer
 https://github.com/Azure-Samples/azure-event-grid-viewer
-
+Refresh to established front end link to backend
 
 # Function and EventGrid
 1. Add EventGrid trigger
 2. publish
 3. subscribe to endpoint
 auth the endpoint https://learn.microsoft.com/en-us/azure/event-grid/security-authentication
+
+https://learn.microsoft.com/en-us/azure/azure-functions/event-grid-how-tos?tabs=v2%2Cportal
+
 
 # Function and Service Bus Events
 https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-to-event-grid-integration-function?toc=%2Fazure%2Fevent-grid%2Ftoc.json
