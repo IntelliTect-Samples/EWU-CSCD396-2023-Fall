@@ -83,13 +83,14 @@
 - APIs
 - Content Delivery Networks (CDN)
 
-## Week 6-1
+## Week 6-1, 10
 - Finish off Event Grid 
 - Solution architecture
+- Planning
 - Deployments
 - Cosmos DB
 
-## Week 6-2
+## Week 6-2, 11
 - API Management intro
 
 ## Week 7-1
