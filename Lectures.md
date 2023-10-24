@@ -85,10 +85,12 @@
 
 ## Week 6-1
 - Finish off Event Grid 
-- API Management intro
+- Solution architecture
+- Deployments
+- Cosmos DB
 
 ## Week 6-2
-- Cosmos DB
+- API Management intro
 
 ## Week 7-1
 - Explore Event Hub

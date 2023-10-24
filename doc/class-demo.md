@@ -20,15 +20,13 @@ Joke Service with Web Front End
 - API Management to control who gets jokes, or to filter jokes. API Key scenario
 - CosmosDB to store jokes
 - Redis Cache to cache jokes
-- K8S or Container App to scale
- 
+- Migrate API backed to K8S or Container App to scale
+- Add App Configuration and [feature flags](https://learn.microsoft.com/en-us/azure/azure-app-configuration/manage-feature-flags)
+
 ## Stretches
 - Jokebot
 - AI to generate joke
-- ML to guage joke sentiment
-
-
-
+- ML to measure joke sentiment/cleanliness?
 
 CosmosDB
  API to get a joke
