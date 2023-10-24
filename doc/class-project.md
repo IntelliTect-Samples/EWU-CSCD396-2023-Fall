@@ -1,16 +1,18 @@
 
 # Overview
-Simple scenario 
-informed by real world
-Demonstrate using services togehter to build a solution
+- simplistic scenario 
+- informed by real world
+- Demonstrate using services togehter to build a solution
 
-# Solution Overview
-Joke Service with Web Front End
+## Joke Service with Web Front End
 
 - Get Jokes either via Web Site or API
-- Add jokes
-  - New jokes must be approved by Grant
+    - web displays jokes from API
+- Submit jokes
   - Submissions are queued for review
+  - New jokes must be approved by Grant
+  - Evaluate jokes for cleanliness and corniness
+- Add Jokes
 
 ## Services
 - Function provides API to get a joke and submit a joke
@@ -22,6 +24,7 @@ Joke Service with Web Front End
 - Redis Cache to cache jokes
 - Migrate API backed to K8S or Container App to scale
 - Add App Configuration and [feature flags](https://learn.microsoft.com/en-us/azure/azure-app-configuration/manage-feature-flags)
+- Redis Cache serving the joke of the day
 
 ## Stretches
 - Jokebot
