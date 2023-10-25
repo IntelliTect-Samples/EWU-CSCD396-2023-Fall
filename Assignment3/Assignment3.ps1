@@ -6,7 +6,7 @@
 # - Az.ContainerInstance v2.1.0
 
 # $SubscriptionId = "76f7ad17-1d4f-4019-8795-69d05c325aa0"
-# $ResourceGroup = "jmcvay1_rg_0240"
+# $ResourceGroup = "rg-assignment3"
 # $EventGridAppUrl = "https://assignment3-737373.azurewebsites.net/"
 # $VirtualMachineName = "vm-assignment3"
 # $ContainerRegistryName = "cras3"
