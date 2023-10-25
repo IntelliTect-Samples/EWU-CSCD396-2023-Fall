@@ -1,0 +1,7 @@
+$SubscriptionId = "ec5397a2-8944-4e78-b6c4-cbbc5cce0bce"
+$ResourceGroup = "CSCD396-Fall"
+$WebAppName = "Assignment2-396Fall"
+$WebAppUrl = "assignment2-396fall.azurewebsites.net"
+$KeyVault = "assignment2-keyvault"
+$SecretName = "Assignment2Secret"
+$StorageAccount = "cscd396storage"
