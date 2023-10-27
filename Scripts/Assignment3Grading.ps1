@@ -5,16 +5,16 @@
 # - Az.ContainerRegistry v3.0.0
 # - Az.ContainerInstance v2.1.0
 
-# $SubscriptionId = ""
-# $ResourceGroup = ""
-# $EventGridAppUrl = ""
-# $VirtualMachineName = ""
-# $ContainerRegistryName = ""
-# $ContainerRegistryPassword = ""
-# $EventHubNamespaceName = ""
-# $EventHubName = ""
-# $EventGridSystemTopicName = ""
-# $ContainerGroupName = ""
+$SubscriptionId = "6f0faedd-afd2-46a3-969c-55fedaf53408"
+$ResourceGroup = "Assignment3"
+$EventGridAppUrl = "http://ewueventviewer.azurewebsites.net"
+$VirtualMachineName = "myVM"
+$ContainerRegistryName = "CSCD396contregA3"
+$ContainerRegistryPassword = "ner9LjDwo/s6UjCQsn/TLroUNQx843JSxS63gw9GKn+ACRDj/hPD"
+$EventHubNamespaceName = "ewuAssignment30315687"
+$EventHubName = "ewuAssignment3Hub"
+$EventGridSystemTopicName = "cscd396contrega3-51188fb0-781a-40ee-be60-d0a1b94bfeb1"
+$ContainerGroupName = "a3container"
 
 
 $RequirementsMet = 0
@@ -55,7 +55,7 @@ $headers = @{
     "Authorization" = "Bearer $token"
 }
 
-$AcrServer = "$ContainerRegistryName.azurecr.io"
+$AcrServer = "$($ContainerRegistryName.ToLower()).azurecr.io"
 $ImagePullV1Result = docker pull $AcrServer/hello-world:v1
 if ($ImagePullV1Result -Like "*v1: Pulling from hello-world*") {
     $RequirementsMet++
