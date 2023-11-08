@@ -5,16 +5,16 @@
 # - Az.ContainerRegistry v3.0.0
 # - Az.ContainerInstance v2.1.0
 
-# $SubscriptionId = ""
-# $ResourceGroup = ""
-# $EventGridAppUrl = ""
-# $VirtualMachineName = ""
-# $ContainerRegistryName = ""
-# $ContainerRegistryPassword = ""
-# $EventHubNamespaceName = ""
-# $EventHubName = ""
-# $EventGridSystemTopicName = ""
-# $ContainerGroupName = ""
+$SubscriptionId = "ec5397a2-8944-4e78-b6c4-cbbc5cce0bce"
+$ResourceGroup = "CSCD396-Fall"
+$EventGridAppUrl = "https://396assignment3.azurewebsites.net/"
+$VirtualMachineName = "my396VM"
+$ContainerRegistryName = "396containerregistry"
+$ContainerRegistryPassword = "UTSGFhdKsnC092D6h2egIOrj+Ma18QF1NPNyIAipfq+ACRA8ZkJy"
+$EventHubNamespaceName = "NameSpace396"
+$EventHubName = "396eventhub"
+$EventGridSystemTopicName = "396containerregistry-3f8cf808-5f3f-4d9e-ada8-fcc1f274ffe3"
+$ContainerGroupName = "396container"
 
 
 $RequirementsMet = 0
