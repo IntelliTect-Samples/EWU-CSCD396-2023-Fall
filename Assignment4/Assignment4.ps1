@@ -1,0 +1,8 @@
+$SubscriptionId = "76f7ad17-1d4f-4019-8795-69d05c325aa0"
+$ResourceGroup = "rg-assignment4"
+$LogAnalyticsWorkspaceName = "LAWorkspace-as4"
+$LogAnalyticsTableName = "asTable_CL"
+$DataCollectionRuleName = "dcr-as4"
+$DataCollectionEndpointName = "fa-dce-as4"
+$FunctionAppName = "function-app-as4"
+$ApiManagementGatewayName = "apim-as4"
