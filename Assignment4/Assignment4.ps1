@@ -1,0 +1,8 @@
+$SubscriptionId = "5f42cdd9-9faa-4a87-8106-7209d28a03cd"
+$ResourceGroup = "praythopson_rg_7717"
+$LogAnalyticsWorkspaceName = "paulsonsworkspace"
+$LogAnalyticsTableName = "MyTable_CL"
+$DataCollectionRuleName = "paulsonsrule"
+$DataCollectionEndpointName = "paulsonseastendpoint"
+$FunctionAppName = "paulsonsfunctionapp"
+$ApiManagementGatewayName = "paulsonsapimangement"
