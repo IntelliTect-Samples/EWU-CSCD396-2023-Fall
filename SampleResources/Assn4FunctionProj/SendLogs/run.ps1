@@ -19,9 +19,9 @@ Write-Host "Body:"
 Write-Host $JsonBody
 $responseBody = "This HTTP triggered function executed successfully."
 
-$DceUri = "{Dce Uri}" # ex. "https://github-dce-l6gf.centralus-1.ingest.monitor.azure.com"
-$DcrImmutableId = "{Immutable ID}" # ex. "dcr-f134c4e9ca004b5f889a75569073181a"
-$Table = "{Table Name}" # ex. "TableName_CL"
+$DceUri = "https://assignment4-endpoint-p3vw.westus3-1.ingest.monitor.azure.com" # ex. "https://github-dce-l6gf.centralus-1.ingest.monitor.azure.com"
+$DcrImmutableId = "dcr-a7a5c81daa4b4b2c91eb70b9fd111741" # ex. "dcr-f134c4e9ca004b5f889a75569073181a"
+$Table = "Assignment4Table2_CL_CL" # ex. "TableName_CL"
 
 $bearerToken = GetAccessToken
 

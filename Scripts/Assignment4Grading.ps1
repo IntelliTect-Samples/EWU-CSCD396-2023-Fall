@@ -4,14 +4,14 @@
 # - Az.Monitor v3.0.1
 # - Az.OperationalInsights 3.2.0
 
-# $SubscriptionId = ""
-# $ResourceGroup = ""
-# $LogAnalyticsWorkspaceName = ""
-# $LogAnalyticsTableName = ""
-# $DataCollectionRuleName = ""
-# $DataCollectionEndpointName = ""
-# $FunctionAppName = ""
-# $ApiManagementGatewayName = ""
+$SubscriptionId = "ec5397a2-8944-4e78-b6c4-cbbc5cce0bce"
+$ResourceGroup = "CSCD396-Fall"
+$LogAnalyticsWorkspaceName = "396workspace"
+$LogAnalyticsTableName = "Assignment4Table2_CL_CL"
+$DataCollectionRuleName = "Assignment4-Rule"
+$DataCollectionEndpointName = "Assignment4-Endpoint"
+$FunctionAppName = "Assignment4-Func"
+$ApiManagementGatewayName = "assignment4apim"
 
 $RequirementsMet = 0
 $TotalRequirements = 12
@@ -108,7 +108,7 @@ else {
     Write-Host "Failed to find role assignment 'Monitoring Metrics Publisher' and 'Contributor' over scope of the Resource Group for FnApp Identity"
 }
 
-$WorkspaceGuid = (Get-AzOperationalInsightsWorkspace -Name la-test-jc -ResourceGroupName test-rg).CustomerID
+$WorkspaceGuid = "2c943329-a559-4a5e-b977-d4746b1a2d4f"
 $QueryResults = (Invoke-AzOperationalInsightsQuery -WorkspaceId $WorkspaceGuid -Query $LogAnalyticsTableName).Results
 
 if ($QueryResults) {

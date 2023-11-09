@@ -1,0 +1,8 @@
+$SubscriptionId = "ec5397a2-8944-4e78-b6c4-cbbc5cce0bce"
+$ResourceGroup = "CSCD396-Fall"
+$LogAnalyticsWorkspaceName = "396workspace"
+$LogAnalyticsTableName = "Assignment4Table2_CL_CL"
+$DataCollectionRuleName = "Assignment4-Rule"
+$DataCollectionEndpointName = "Assignment4-Endpoint"
+$FunctionAppName = "Assignment4-Func"
+$ApiManagementGatewayName = "assignment4apim"
