@@ -12,7 +12,6 @@
 # $DataCollectionEndpointName = ""
 # $FunctionAppName = ""
 # $ApiManagementGatewayName = ""
-
 $RequirementsMet = 0
 $TotalRequirements = 12
  

@@ -1,0 +1,8 @@
+$SubscriptionId = "ab05f05d-8cb3-4708-b249-e5bce96502c4"
+$ResourceGroup = "cscd396assignment4"
+$LogAnalyticsWorkspaceName = "myfirstworkspace"
+$LogAnalyticsTableName = "ApacheAccess_CL"
+$DataCollectionRuleName = "apache-access-logs"
+$DataCollectionEndpointName = "logs-ingestion"
+$FunctionAppName = "assignment4funcapp"
+$ApiManagementGatewayName = "myfirstapim396"
