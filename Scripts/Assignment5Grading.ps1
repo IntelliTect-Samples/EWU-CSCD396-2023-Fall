@@ -1,21 +1,25 @@
 # PS Module Requirements
-# - Az.ApiMangement v.4.0.2
-# - Az.Functions v.4.0.6
-# - Az.Monitor v3.0.1
-# - Az.OperationalInsights 3.2.0
+# - Az.Accounts v.2.14.1
+# - Az.CosmosDB v.1.5.0
+# - Az.Network v6.2.0
+# - Az.RedisCache v1.8.0
+# - Az.ServiceBus v3.0.0
 
-$SubscriptionId = "d00af0f7-1cd6-4415-b760-3ad7fc274cbf"
-$ResourceGroup = "test-rg"
+$SubscriptionId = ""
+$ResourceGroup = "g"
 $VnetName = ""
-$CosmosDbAccountName = "cosmosassn5"
-$CosmosPrivateEndpointName = "cosmos-pe"
-$ServiceBusNamespaceName = "sbjcassn5"
-$ServiceBusTopicName = "tst-topic"
-$ServiceBusSubscriptionName = "tst-sub"
-
+$CosmosDbAccountName = ""
+$CosmosPrivateEndpointName = ""
+$WebAppName = ""
+$WebAppPrivateEndpointName = ""
+$RedisCacheName = ""
+$RedisCachePrivateEndpointName = ""
+$ServiceBusNamespaceName = ""
+$ServiceBusTopicName = ""
+$ServiceBusSubscriptionName = ""
 
 $RequirementsMet = 0
-$TotalRequirements = 12
+$TotalRequirements = 13
  
 # You'll manually have to log in twice here (prompts should pop up in a browser and a PowerShell window)
 az login 
@@ -43,7 +47,7 @@ if($CosmosDbAccountResult){
 $CosmosEndpointResult = Get-AzPrivateEndpoint -Name $CosmosPrivateEndpointName -ResourceGroupName $ResourceGroup
 $CosmosEndpointConnectionResult = Get-AzPrivateEndpointConnection -PrivateLinkResourceId "/subscriptions/$SubscriptionId/resourceGroups/$ResourceGroup/providers/Microsoft.DocumentDB/databaseAccounts/$CosmosDbAccountName"
 
-if($CosmosEndpointResult -and $CosmosEndpointConnectionResult.Name -like $CosmosPrivateEndpointName){
+if($CosmosEndpointResult -and $CosmosEndpointConnectionResult.Name -like $CosmosPrivateEndpointName  + "*"){
     $RequirementsMet++
        Write-Host "Successfully found the Cosmos Db Account Private Endpoint"
    }
@@ -57,6 +61,93 @@ if($CosmosDbAccountResult.PublicNetworkAccess -like "Disabled"){
    }
    else {
        Write-Host "Failed to find that the Cosmos Db Account is private"
+}
+
+$RedisCacheResult = Get-AzRedisCache -Name $RedisCacheName -ResourceGroupName $ResourceGroup
+if($RedisCacheResult) {
+    $RequirementsMet++
+       Write-Host "Successfully found the Redis Cache"
+   }
+   else {
+       Write-Host "Failed to find the Redis Cache"
+}
+
+$WebAppResult = az webapp show -n $WebAppName --resource-group $ResourceGroup --query name -o tsv
+if ($WebAppResult) {
+    $RequirementsMet++
+    Write-Host "Successfully found the Azure Web App through az cli"
+}
+else {
+    Write-Host "Failed to find the Azure Web App through az cli"
+}
+$expectedValue = $RedisCacheName + ".redis.cache.windows.net,abortConnect=false,ssl=true,allowAdmin=true,password=*"
+
+$appSettingResult = az webapp config appsettings list -n $WebAppName --resource-group $ResourceGroup | ConvertFrom-Json 
+$appSettingValue = $appSettingResult | Where-Object { $_.name -like 'CacheConnection' } | Select-Object -ExpandProperty value
+if ($appSettingValue -like $expectedValue ) {
+    $RequirementsMet++
+    Write-Host "Successfully found web app setting with redis cache reference"
+}
+else {
+    Write-Host "Failed to find web app setting with redis cache reference"
+}
+
+$WebAppEndpointResult = Get-AzPrivateEndpoint -Name $WebAppPrivateEndpointName -ResourceGroupName $ResourceGroup
+$WebAppEndpointConnectionResult = Get-AzPrivateEndpointConnection -PrivateLinkResourceId "/subscriptions/$SubscriptionId/resourceGroups/$ResourceGroup/providers/Microsoft.Web/sites/$WebAppName"
+
+if($WebAppEndpointResult -and $WebAppEndpointConnectionResult.Name -like $WebAppPrivateEndpointName + "*"){
+    $RequirementsMet++
+       Write-Host "Successfully found the Web App Private Endpoint"
+   }
+   else {
+       Write-Host "Failed to find the Web App Private Endpoint"
+}
+
+$WebAppPublicAccessResult = az resource show --resource-group $ResourceGroup --name $WebAppName --resource-type "Microsoft.Web/sites" --query properties.publicNetworkAccess -o tsv
+if ($WebAppPublicAccessResult -like "Disabled") {
+    Write-Host "Successfully found web app public access set to disabled"
+    $RequirementsMet++
+}
+else {
+    Write-Host "Failed to find web app public access set to disabled"
+}
+
+$RedisCacheEndpointResult = Get-AzPrivateEndpoint -Name $RedisCachePrivateEndpointName -ResourceGroupName $ResourceGroup
+$RedisCacheEndpointConnectionResult = Get-AzPrivateEndpointConnection -PrivateLinkResourceId "/subscriptions/$SubscriptionId/resourceGroups/$ResourceGroup/providers/Microsoft.Cache/Redis/$RedisCacheName"
+
+if($RedisCacheEndpointResult -and $RedisCacheEndpointConnectionResult.Name -like $RedisCachePrivateEndpointName  + "*"){
+    $RequirementsMet++
+       Write-Host "Successfully found the Redis Cache Private Endpoint"
+   }
+   else {
+       Write-Host "Failed to find the Redis Cache Private Endpoint"
+}
+
+$ServiceBusNamespaceResult = Get-AzServiceBusNamespace -NamespaceName $ServiceBusNamespaceName -ResourceGroupName $ResourceGroup
+if ($ServiceBusNamespaceResult) {
+    $RequirementsMet++
+    Write-Host "Successfully found the Service Bus Namespace"
+}
+else {
+    Write-Host "Failed to find the Service Bus Namespace"
+}
+
+$ServiceBusTopicResult = Get-AzServiceBusTopic -ResourceGroupName $ResourceGroup -NamespaceName $ServiceBusNamespaceName -TopicName $ServiceBusTopicName
+if ($ServiceBusTopicResult) {
+    $RequirementsMet++
+    Write-Host "Successfully found the Service Bus Topic"
+}
+else {
+    Write-Host "Failed to find the Service Bus Topic"
+}
+
+$ServiceBusSubscriptionResult = Get-AzServiceBusSubscription -ResourceGroupName $ResourceGroup -NamespaceName $ServiceBusNamespaceName -TopicName $ServiceBusTopicName -Name $ServiceBusSubscriptionName
+if ($ServiceBusSubscriptionResult) {
+    $RequirementsMet++
+    Write-Host "Successfully found the Service Bus Topic Subscription"
+}
+else {
+    Write-Host "Failed to find the Service Bus Topic Subscription"
 }
 
 Write-Host "Requirements Met on Assignment $RequirementsMet/$TotalRequirements"
