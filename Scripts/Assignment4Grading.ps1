@@ -4,14 +4,14 @@
 # - Az.Monitor v3.0.1
 # - Az.OperationalInsights 3.2.0
 
-# $SubscriptionId = ""
-# $ResourceGroup = ""
-# $LogAnalyticsWorkspaceName = ""
-# $LogAnalyticsTableName = ""
-# $DataCollectionRuleName = ""
-# $DataCollectionEndpointName = ""
-# $FunctionAppName = ""
-# $ApiManagementGatewayName = ""
+$SubscriptionId = "a1776291-e4f1-42a2-9867-7e23d9b619cd"
+$ResourceGroup = "nng2_rg_4"
+$LogAnalyticsWorkspaceName = "workspace"
+$LogAnalyticsTableName = "nng2_table_4_CL"
+$DataCollectionRuleName = "nng2_DCR"
+$DataCollectionEndpointName = "nng2-dcollection-4"
+$FunctionAppName = "nng2-function-4"
+$ApiManagementGatewayName = "nng2-apim"
 
 $RequirementsMet = 0
 $TotalRequirements = 12
@@ -19,6 +19,7 @@ $TotalRequirements = 12
 # You'll manually have to log in twice here (prompts should pop up in a browser and a PowerShell window)
 az login 
 Connect-AzAccount
+az login --scope https://graph.microsoft.com//.default
 Set-AzContext -Subscription $SubscriptionId
 
 $LogAnalyticsResult = Get-AzOperationalInsightsWorkspace -Name $LogAnalyticsWorkspaceName -ResourceGroupName $ResourceGroup
@@ -108,7 +109,7 @@ else {
     Write-Host "Failed to find role assignment 'Monitoring Metrics Publisher' and 'Contributor' over scope of the Resource Group for FnApp Identity"
 }
 
-$WorkspaceGuid = (Get-AzOperationalInsightsWorkspace -Name la-test-jc -ResourceGroupName test-rg).CustomerID
+$WorkspaceGuid = (Get-AzOperationalInsightsWorkspace -Name $LogAnalyticsWorkspaceName -ResourceGroupName $ResourceGroup).CustomerID
 $QueryResults = (Invoke-AzOperationalInsightsQuery -WorkspaceId $WorkspaceGuid -Query $LogAnalyticsTableName).Results
 
 if ($QueryResults) {

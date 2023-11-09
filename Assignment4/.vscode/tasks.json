@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "func start",
+      "type": "shell",
+      "command": "func start",
+      "problemMatcher": "$func-powershell-watch",
+      "isBackground": true
+      }
+  ]
+}

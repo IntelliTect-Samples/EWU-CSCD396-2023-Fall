@@ -1,0 +1,8 @@
+$SubscriptionId = "a1776291-e4f1-42a2-9867-7e23d9b619cd"
+$ResourceGroup = "nng2_rg_4"
+$LogAnalyticsWorkspaceName = "workspace"
+$LogAnalyticsTableName = "nng2_table_4_CL"
+$DataCollectionRuleName = "nng2_DCR"
+$DataCollectionEndpointName = "nng2-dcollection-4"
+$FunctionAppName = "nng2-function-4"
+$ApiManagementGatewayName = "https://nng2-apim.azure-api.net"
