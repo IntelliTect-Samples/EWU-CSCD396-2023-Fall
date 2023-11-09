@@ -1,6 +1,6 @@
-# EWU-CSCD378-2023-Spring
+# EWU-CSCD396-2023-Fall
 
-## Assignment 4
+## Assignment 5
 
 The purpose of this assignment is to solidify your learning of:
 
@@ -8,6 +8,7 @@ The purpose of this assignment is to solidify your learning of:
 - Redis Cache
 - Virtual Networks and Subnets
 - Private Endpoint
+- Service Bus
 
 ## Prerequisites
 
