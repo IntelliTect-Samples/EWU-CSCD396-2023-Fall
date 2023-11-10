@@ -1,0 +1,8 @@
+$SubscriptionId = "42f90695-f39c-451f-8b08-dc2ddfc9c182"
+$ResourceGroup = "MyResourceGroup2"
+$LogAnalyticsWorkspaceName = "MyWorkspace"
+$LogAnalyticsTableName = "logTable_CL"
+$DataCollectionRuleName = "DataCollectionRule"
+$DataCollectionEndpointName = "DataCollectionEndpoint"
+$FunctionAppName = "396FunctionAppTake2"
+$ApiManagementGatewayName = "apimAssignment4-resource"
