@@ -1,0 +1,8 @@
+$SubscriptionId = "33f5d72d-0e42-4587-a7bf-15bf6e39559f"
+$ResourceGroup = "assignment4-rg"
+$LogAnalyticsWorkspaceName = "assignment4-ws"
+$LogAnalyticsTableName = "Assignment4Table_CL"
+$DataCollectionRuleName = "assingment4-dce-rules"
+$DataCollectionEndpointName = "assingment4-dce"
+$FunctionAppName = "assignment4-function"
+$ApiManagementGatewayName = "assingment4-apim"

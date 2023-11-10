@@ -13,11 +13,20 @@
 # $FunctionAppName = ""
 # $ApiManagementGatewayName = ""
 
+$SubscriptionId = "33f5d72d-0e42-4587-a7bf-15bf6e39559f"
+$ResourceGroup = "assignment4-rg"
+$LogAnalyticsWorkspaceName = "assignment4-ws"
+$LogAnalyticsTableName = "Assignment4Table_CL"
+$DataCollectionRuleName = "assingment4-dce-rules"
+$DataCollectionEndpointName = "assingment4-dce"
+$FunctionAppName = "assignment4-function"
+$ApiManagementGatewayName = "assingment4-apim"
+
 $RequirementsMet = 0
 $TotalRequirements = 12
- 
+
 # You'll manually have to log in twice here (prompts should pop up in a browser and a PowerShell window)
-az login 
+az login
 Connect-AzAccount
 Set-AzContext -Subscription $SubscriptionId
 
@@ -49,7 +58,7 @@ if($DataCollectionEndpointResult){
        Write-Host "Failed to find the Data Collection Endpoint"
 }
 
-$TableObject = $TableResult | ConvertFrom-Json 
+$TableObject = $TableResult | ConvertFrom-Json
 $TableObject.schema.tableSubType
 if($TableObject -and ($TableObject.schema.tableSubType -like "DataCollectionRuleBased")){
     $RequirementsMet++
