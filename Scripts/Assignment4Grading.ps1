@@ -108,7 +108,7 @@ else {
     Write-Host "Failed to find role assignment 'Monitoring Metrics Publisher' and 'Contributor' over scope of the Resource Group for FnApp Identity"
 }
 
-$WorkspaceGuid = (Get-AzOperationalInsightsWorkspace -Name la-test-jc -ResourceGroupName test-rg).CustomerID
+$WorkspaceGuid = (Get-AzOperationalInsightsWorkspace -Name "a4-log-analytics-workspace" -ResourceGroupName "Assignment4").CustomerID
 $QueryResults = (Invoke-AzOperationalInsightsQuery -WorkspaceId $WorkspaceGuid -Query $LogAnalyticsTableName).Results
 
 if ($QueryResults) {

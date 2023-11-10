@@ -1,0 +1,8 @@
+$SubscriptionId = "96ff4565-e143-41b1-8b05-f89d1ff17f82"
+$ResourceGroup = "Assignment4"
+$LogAnalyticsWorkspaceName = "a4-log-analytics-workspace"
+$LogAnalyticsTableName = "A4DCRTable_CL"
+$DataCollectionRuleName = "A4DCR"
+$DataCollectionEndpointName = "A4-DCE"
+$FunctionAppName = "A4FunctionPS"
+$ApiManagementGatewayName = "a4apim"
