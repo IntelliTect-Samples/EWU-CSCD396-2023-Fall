@@ -4,10 +4,10 @@
 # - Az.Monitor v3.0.1
 # - Az.OperationalInsights 3.2.0
 
-# $SubscriptionId = ""
-# $ResourceGroup = ""
-# $LogAnalyticsWorkspaceName = ""
-# $LogAnalyticsTableName = ""
+# $SubscriptionId = "4b0e8ef1-c58c-47af-a570-74e48f584391"
+# $ResourceGroup = "Assignment4"
+# $LogAnalyticsWorkspaceName = "log-analytics-a4"
+# $LogAnalyticsTableName = "logtable_ewua4_CL"
 # $DataCollectionRuleName = ""
 # $DataCollectionEndpointName = ""
 # $FunctionAppName = ""
