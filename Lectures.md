@@ -149,6 +149,7 @@
     - Unit, Integration, and Functional Tests
     - [More workflow stuff](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/about-workflows)
 - monitoring and debugging
+- Security: managed identity, RBAC
 
 ## Azure Services
 Following is the primary list of services we plan to cover in this class. Note that several supporting services will also be covered.
