@@ -28,6 +28,7 @@
 - Add App Configuration and [feature flags](https://learn.microsoft.com/en-us/azure/azure-app-configuration/manage-feature-flags)
 - Redis Cache serving the joke of the day
 - going global: latency checks, serving local, 
+- [Configure Front Door for Static Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/front-door-manual?tabs=azure-portal&pivots=swa-afd-enterprise-grade-edge)
 
 
 ## Stretches

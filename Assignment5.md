@@ -1,6 +1,6 @@
 # EWU-CSCD378-2023-Spring
 
-## Assignment 4
+## Assignment 5
 
 The purpose of this assignment is to solidify your learning of:
 

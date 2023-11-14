@@ -84,54 +84,76 @@
 - Content Delivery Networks (CDN)
 
 ## Week 6-1, 10
+- Azure Static Web App Networking and DNS
+- Networking and DNS
+- Connecting 
 - Finish off Event Grid 
 - Solution architecture
 - Planning
 - Deployments
-- Cosmos DB
 
 ## Week 6-2, 11
+- Cosmos DB
+
+## Week 7-1, 12
+- Finish Cosmos DB
 - API Management intro
 
-## Week 7-1
-- Explore Event Hub
+## Week 7-2, 13
+- Query Cosmos DB
 
-## Week 7-2
-- Kubernetes
-- Container Apps
+## >>> Week 8-1, 14
+- API Management continued
+- Something
 
-## Week 8-1
-- App Configuration Service
-
-## Week 8-2
+## Week 8-2, 15
+- Logic App w/ Sentiment Analysis
+- Cosmos DB Change Feed
+- Static site updates w/ secure a page
+- 
 - Redis Cache
 
-## Week 9-1
+## Week 9-1, 16
+- Build out web app
+
+## Week 9-2, 17
+- Azure Monitor
 - Infrastructure as Code (IaC)
 - Bicep
 - Terraform
 
-## Week 9-2
-- Azure Monitor
+## Week 10-1, 18
+- DevOps
+- App Configuration Service
 
-## Week 10-1
+## Week 11-1, 19
+- Scrum
 
-## Week 10-2
+## Week 11-2, 20
+- Challenges
+- Ask Us Anything
+
+## Week 12, Final Exams
 
 
 ## Topics (tentative)
 - x Git
 - o GitHub Actions
+- o GitHub Issues/Boards
 ---
-- GitHub Issues/Boards
 - Scrum/Agile
+---
 - IaC, Terraform and Bicep
-- Branch release patterns
-- Unit, Integration, and Functional Tests
-- [More workflow stuff](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/about-workflows)
+- DevOps Building Blocks
+    - Branch release patterns
+    - Unit, Integration, and Functional Tests
+    - [More workflow stuff](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/about-workflows)
 - monitoring and debugging
 
-## Azure Services to Cover
+## Azure Services
+Following is the primary list of services we plan to cover in this class. Note that several supporting services will also be covered.
+
+### Covered
 - Blob Storage
 - Key Vault
 - App Service
@@ -139,21 +161,29 @@
 - Containers
 - Container Instance
 - Service Bus
-- Event Hub
 - Storage Queue
-
----
 - Cosmos DB
-- API Management
 - Event Grid
-- Container Apps
-- Kubernetes
-- App Configuration Service
-- Azure Monitor and App Insights
+- API Management
 - Redis Cache
+
+### In Process
+- Azure Monitor and App Insights
+    - Instrument Joke
+    - Additional Queries and/or alerts
+- App Configuration Service
+    - Deployment
+    - Portal
+
+### To Cover
+- App Configuration Management
+- Container Apps
+    - Kubernetes
 - CDN
+- Event Hub
 
 ### Extra/Bonus
 - Azure Chatbot
 - Azure Automation
+- OAuth
 
