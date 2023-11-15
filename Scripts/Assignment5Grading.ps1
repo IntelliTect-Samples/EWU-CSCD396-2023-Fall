@@ -5,18 +5,18 @@
 # - Az.RedisCache v1.8.0
 # - Az.ServiceBus v3.0.0
 
-$SubscriptionId = ""
-$ResourceGroup = "g"
-$VnetName = ""
-$CosmosDbAccountName = ""
-$CosmosPrivateEndpointName = ""
-$WebAppName = ""
-$WebAppPrivateEndpointName = ""
-$RedisCacheName = ""
-$RedisCachePrivateEndpointName = ""
-$ServiceBusNamespaceName = ""
-$ServiceBusTopicName = ""
-$ServiceBusSubscriptionName = ""
+$SubscriptionId = "33f5d72d-0e42-4587-a7bf-15bf6e39559f"
+$ResourceGroup = "assignment5-rg"
+$VnetName = "assignment5-vnet"
+$CosmosDbAccountName = "assignment5-cosmosdb"
+$CosmosPrivateEndpointName = "assignment5-cosmosdb-private-endpoint"
+$WebAppName = "assignment5-web-app-v2"
+$WebAppPrivateEndpointName = "assignment5-web-app-private-endpoint"
+$RedisCacheName = "assignment5-redis-cache"
+$RedisCachePrivateEndpointName = "assignment5-redis-cache-private-endpoint"
+$ServiceBusNamespaceName = "assignment5-service-bus-namespace"
+$ServiceBusTopicName = "assignment5-service-bus-namespace-topic"
+$ServiceBusSubscriptionName = "assignment5-service-bus-namespace-topic-sub"
 
 $RequirementsMet = 0
 $TotalRequirements = 13
