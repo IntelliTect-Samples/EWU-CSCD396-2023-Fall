@@ -102,7 +102,7 @@
 ## Week 7-2, 13
 - Query Cosmos DB
 
-## >>> Week 8-1, 14
+## Week 8-1, 14
 - API Management continued
 - Something
 
@@ -117,7 +117,6 @@
 - Build out web app
 
 ## Week 9-2, 17
-- Azure Monitor
 - Infrastructure as Code (IaC)
 - Bicep
 - Terraform
@@ -128,12 +127,14 @@
 
 ## Week 11-1, 19
 - Scrum
+- Azure Monitor
 
 ## Week 11-2, 20
 - Challenges
 - Ask Us Anything
 
 ## Week 12, Final Exams
+- tbd
 
 
 ## Topics (tentative)
