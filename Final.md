@@ -12,8 +12,8 @@ Final (50 points)
 - 15 points for first 3 services
 - 10 additional points for 4th service
 - 10 additional point for 5th service (25 max) 
-- 5 presentation points
-- 5 points for GitHub Action Deployment for at least 1 service
+- 5 points for presentation
+- 5 points for GitHub Action Deployment of at least 1 service
 - 5 points for Infrastructure as Code deployment of at least 1 servcie 
 
 Notes on Final Presentation
@@ -34,7 +34,7 @@ Notes on Extra Credit Points
 - We will answer any question you have on achieving extra credit
 
 ## Extra Bonus Bonus
-- Passing AZ-204 Exam guarantees and A in class and full credit. Must be passed before grading is due
+- Passing AZ-204 Exam guarantees an A in class and full credit. Must be passed before grading is due.
 
 ## Services we covered in class
 - Blob Storage
@@ -54,5 +54,3 @@ Notes on Extra Credit Points
 - Container Apps
 - CDN
 - Event Hub
-
-
