@@ -1,0 +1,42 @@
+name: Assignment 1
+
+on:
+  push:
+    branches:
+      - Assignment1
+
+jobs:
+  list-resources:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@main
+
+      - name: Azure Login
+        id: login
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+
+      - name: List Resources
+        run: |
+          az account show > azure_account_info.log
+          az group list --output table > subscription_resources.log
+
+      - name: Save Azure Login Output
+        run: echo "${{ steps.login.outputs }} > azure_login_output.log"
+
+      - name: Logout from Azure
+        run: az logout
+
+  - name: Upload Log Files
+    uses: actions/upload-artifact@v2
+    with:
+      name: logs
+      path: |
+        azure_account_info.log
+        subscription_resources.log
+        azure_login_output.log
