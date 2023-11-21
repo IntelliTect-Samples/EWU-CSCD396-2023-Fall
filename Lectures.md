@@ -178,7 +178,6 @@ Following is the primary list of services we plan to cover in this class. Note t
     - Portal
 
 ### To Cover
-- App Configuration Management
 - Container Apps
     - Kubernetes
 - CDN
