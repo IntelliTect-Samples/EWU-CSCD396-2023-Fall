@@ -1,42 +1,40 @@
-name: Assignment 1
+name: Azure Login with OIDC
+on: 
+  workflow_dispatch:
 
-on:
-  push:
-    branches:
-      - Assignment1
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  AZURE_WEBAPP_NAME: jc-oidc-app    # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+  DOTNET_VERSION: '6.0.9'           # set this to the dot net version to use
 
 jobs:
-  list-resources:
+  deploy:
     runs-on: ubuntu-latest
-
+    environment: production
     steps:
       - name: Checkout the repo
         uses: actions/checkout@main
 
-      - name: Azure Login
-        id: login
+      - name: Login
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+          client-id: ${{ secrets.AZURE_CLIENT_ID_CREATED_SP }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: List Resources
+      # Run dotnet build and publish
+      - name: Show Connection Success
         run: |
-          az account show > azure_account_info.log
-          az group list --output table > subscription_resources.log
+          az account show
 
-      - name: Save Azure Login Output
-        run: echo "${{ steps.login.outputs }} > azure_login_output.log"
-
-      - name: Logout from Azure
+      - name: List Azure Resources
+        run: az resource list
+          
+      # Deploy to Azure Web app
+    
+      - name: logout
         run: az logout
-
-  - name: Upload Log Files
-    uses: actions/upload-artifact@v2
-    with:
-      name: logs
-      path: |
-        azure_account_info.log
-        subscription_resources.log
-        azure_login_output.log
