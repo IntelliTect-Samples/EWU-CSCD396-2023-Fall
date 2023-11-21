@@ -6,34 +6,37 @@ on:
       - Assignment1
 
 jobs:
-  build:
+  list-resources:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout the repo
+        uses: actions/checkout@main
 
-    - name: Debug Azure Secrets
-      run: |
-        echo "AZURE_CLIENT_ID_CREATED_SP: ${{ secrets.AZURE_CLIENT_ID }}"
-        echo "AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}"
-        echo "AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}"
-      env:
-        AZURE_CLIENT_ID_CREATED_SP: ${{ secrets.AZURE_CLIENT_ID }}
-        AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-        AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Azure Login
+        id: login
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
 
-    - name: Set up Azure CLI
-      uses: azure/login@v1
-      with:
-        client-id: ${{ secrets.AZURE_CLIENT_ID }}
-        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: List Resources
+        run: |
+          az account show > azure_account_info.log
+          az group list --output table > subscription_resources.log
 
-    - name: List Azure Resources
-      run: |
-        az account show
-        az resource list --output table
+      - name: Save Azure Login Output
+        run: echo "${{ steps.login.outputs }} > azure_login_output.log"
 
-      env:
-        subscription_id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Logout from Azure
+        run: az logout
+
+  - name: Upload Log Files
+    uses: actions/upload-artifact@v2
+    with:
+      name: logs
+      path: |
+        azure_account_info.log
+        subscription_resources.log
+        azure_login_output.log
