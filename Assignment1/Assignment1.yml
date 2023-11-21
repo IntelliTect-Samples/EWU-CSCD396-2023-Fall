@@ -8,7 +8,7 @@ permissions:
 
 env:
   AZURE_WEBAPP_NAME: jc-oidc-app    # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app    project, defaults to the repository root
   DOTNET_VERSION: '6.0.9'           # set this to the dot net version to use
 
 jobs:
@@ -16,11 +16,13 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      # Checkout the repo
+      -name: Checkout the repo
       - uses: actions/checkout@main
+
+      -name:Login
       - uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          client-id: ${{ secrets.AZURE_CLIENT_ID_CREATED_SP }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       
@@ -28,9 +30,12 @@ jobs:
       - name: 'Show Connection Success'
         run: |
           az account show
+
+	-name:List Azure Resources
+	 run: az resource list
           
       # Deploy to Azure Web app
     
       - name: logout
-        run: |
+        run: az logout
           az logout
