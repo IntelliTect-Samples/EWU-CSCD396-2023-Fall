@@ -24,7 +24,7 @@ Notes on Final Presentation
 - Presentations should be no longer than 10 minutes. Highly recommend you practice!
 
 Extra Credit (50 points)
-- Deploy all services via GitHub Actions, infrastructe as code and any code
+- Deploy all services via GitHub Actions, infrastructure as code and any code
 - Passwordless/keyless connections and configuration (Managed Identity, OIDC, OAuth)
 - Demonstrate a real world scenario
 - Demonstrate use of backlog for the assignment
