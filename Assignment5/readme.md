@@ -1,1 +1,12 @@
-Place assignment files here
+$SubscriptionId = "5f42cdd9-9faa-4a87-8106-7209d28a03cd"
+$ResourceGroup = "praythopson-rg-7717"
+$VnetName = "paulsonsvmn"
+$CosmosDbAccountName = "purplepigs"
+$CosmosPrivateEndpointName = "paulsonscosmosendpoint"
+$WebAppName = "paulsonsendpoint"
+$WebAppPrivateEndpointName = ""
+$RedisCacheName = "paulsonsredis"
+$RedisCachePrivateEndpointName = "paulsonsredisendpoint"
+$ServiceBusNamespaceName = "paulsonsservicebus"
+$ServiceBusTopicName = "paulsonstopic"
+$ServiceBusSubscriptionName = "S1"
