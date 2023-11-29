@@ -5,18 +5,18 @@
 # - Az.RedisCache v1.8.0
 # - Az.ServiceBus v3.0.0
 
-$SubscriptionId = ""
-$ResourceGroup = "g"
-$VnetName = ""
-$CosmosDbAccountName = ""
-$CosmosPrivateEndpointName = ""
-$WebAppName = ""
-$WebAppPrivateEndpointName = ""
-$RedisCacheName = ""
-$RedisCachePrivateEndpointName = ""
-$ServiceBusNamespaceName = ""
-$ServiceBusTopicName = ""
-$ServiceBusSubscriptionName = ""
+$SubscriptionId = "4b0e8ef1-c58c-47af-a570-74e48f584391"
+$ResourceGroup = "Assignment5"
+$VnetName = "Gandalf"
+$CosmosDbAccountName = "elrond"
+$CosmosPrivateEndpointName = "rivendale"
+$WebAppName = "the-fellowship"
+$WebAppPrivateEndpointName = "smeagle"
+$RedisCacheName = "galadriel"
+$RedisCachePrivateEndpointName = "prancing-pony"
+$ServiceBusNamespaceName = "gondor"
+$ServiceBusTopicName = "third-age"
+$ServiceBusSubscriptionName = "rohan"
 
 $RequirementsMet = 0
 $TotalRequirements = 13
