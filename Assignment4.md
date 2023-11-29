@@ -1,4 +1,4 @@
-# EWU-CSCD378-2023-Spring
+# EWU-CSCD396-2023-Fall
 
 ## Assignment 4
 
