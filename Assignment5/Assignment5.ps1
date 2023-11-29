@@ -1,0 +1,13 @@
+
+$SubscriptionId = "42f90695-f39c-451f-8b08-dc2ddfc9c182"
+$ResourceGroup = "myResourceGroup"
+$VnetName = "myVM-vnet"
+$CosmosDbAccountName = "myVM-vnet"
+$CosmosPrivateEndpointName = "cosmos_db_private_endpoint"
+$WebAppName = "ContosoTeamStats20231127173213"
+$WebAppPrivateEndpointName = "AppPrivateEndpoint"
+$RedisCacheName = "CSCD396RedisChache"
+$RedisCachePrivateEndpointName = "CSCD396PrivateEndpoint"
+$ServiceBusNamespaceName = "cscd396ServiceBusNameSpace"
+$ServiceBusTopicName = "mytopic"
+$ServiceBusSubscriptionName = "S1"
