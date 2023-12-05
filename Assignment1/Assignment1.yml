@@ -19,17 +19,26 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@main
 
-      - name: Login
-        uses: azure/login@v1
-        with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Check Azure CLI version
+        run: az --version
+
+      - name: Debug Info
+        run: |
+          echo "AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}"
+          echo "AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}"
+          echo "AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+
+      - name: Azure CLI Login
+        run: az login
+        env:
+          AZURE_AD_INTERACTIVE: true
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       # Run dotnet build and publish
       - name: Show Connection Success
-        run: |
-          az account show
+        run: az account show
 
       - name: List Azure Resources
         run: az resource list
@@ -38,3 +47,4 @@ jobs:
     
       - name: logout
         run: az logout
+

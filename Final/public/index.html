@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Submission Form</title>
+  <style>
+    /* Add CSS styles here */
+    header img {
+      width: 200px; /* Adjust the width as needed */
+      height: auto; /* Maintain the aspect ratio */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TheoDoodle</h1>
+    <!-- Replace the path with your actual local file path -->
+    <img src="/IMG_5524.jpg" alt="TheoDoodle Logo">
+  </header>
+
+  <h2>Sign-Up For Our Newsletter</h2>
+  <form id="signupForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+
+  <script>
+    function submitForm() {
+      const email = document.getElementById('email').value;
+
+      if (!email) {
+        alert('Email is required');
+        return;
+      }
+
+      fetch('/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        alert('Sign-up successful!');
+      })
+      .catch(error => {
+        console.error(error);
+        alert('Sign-up failed. Please try again.');
+      });
+    }
+  </script>
+</body>
+</html>
+
+
+
