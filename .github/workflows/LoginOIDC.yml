@@ -1,5 +1,6 @@
 name: Azure Login with OIDC
-on: 
+
+on:
   workflow_dispatch:
 
 permissions:
@@ -7,9 +8,9 @@ permissions:
   contents: read
 
 env:
-  AZURE_WEBAPP_NAME: jc-oidc-app    # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
-  DOTNET_VERSION: '6.0.9'           # set this to the dot net version to use
+  AZURE_WEBAPP_NAME: jc-oidc-app    # Set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # Set this to the path to your web app project, defaults to the repository root
+  DOTNET_VERSION: '6.0.9'           # Set this to the .NET version to use
 
 jobs:
   deploy:
@@ -19,22 +20,12 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@main
 
-      - name: Check Azure CLI version
-        run: az --version
-
-      - name: Debug Info
-        run: |
-          echo "AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}"
-          echo "AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}"
-          echo "AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}"
-
       - name: Azure CLI Login
-        run: az login
-        env:
-          AZURE_AD_INTERACTIVE: true
-          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID_CREATED_SP }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       # Run dotnet build and publish
       - name: Show Connection Success
@@ -44,6 +35,6 @@ jobs:
         run: az resource list
           
       # Deploy to Azure Web app
-    
-      - name: logout
+      - name: Logout
         run: az logout
+
