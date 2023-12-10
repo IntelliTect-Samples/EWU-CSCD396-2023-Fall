@@ -5,18 +5,18 @@
 # - Az.RedisCache v1.8.0
 # - Az.ServiceBus v3.0.0
 
-$SubscriptionId = ""
-$ResourceGroup = "g"
-$VnetName = ""
-$CosmosDbAccountName = ""
-$CosmosPrivateEndpointName = ""
-$WebAppName = ""
-$WebAppPrivateEndpointName = ""
-$RedisCacheName = ""
-$RedisCachePrivateEndpointName = ""
-$ServiceBusNamespaceName = ""
-$ServiceBusTopicName = ""
-$ServiceBusSubscriptionName = ""
+$SubscriptionId = "ec5397a2-8944-4e78-b6c4-cbbc5cce0bce"
+$ResourceGroup = "CSCD396-Fall"
+$VnetName = "396Vnet"
+$CosmosDbAccountName = "mshepherd1"
+$CosmosPrivateEndpointName = "Assignment5Endpoint"
+$WebAppName = "Assignment5App"
+$WebAppPrivateEndpointName = "Assingment5AppEndpoint"
+$RedisCacheName = "Assignment5DNS"
+$RedisCachePrivateEndpointName = "Assignment5RedisEndpoint"
+$ServiceBusNamespaceName = "Assignment5Bus"
+$ServiceBusTopicName = "Assignment5Topic"
+$ServiceBusSubscriptionName = "Assignment5Sub"
 
 $RequirementsMet = 0
 $TotalRequirements = 13
