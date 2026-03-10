@@ -4,9 +4,15 @@ CSCD 396 will provide students with an introduction to building solutions in Azu
 
 We will cover practical examples that focus on the use of cloud bases services in Azure over advanced programming concepts.
 
+
+
+
+
+
 ## Instructors and Class Information
 
-[Phil Spokas](https://github.com/philspokas), [Grant Erickson](https://github.com/GrantErickson), and [Jenny Curry](https://github.com/jenny-curry)
+[Phil Spokas](https://github.com/philspokas) and [Jenny Curry](https://github.com/jenny-curry)
+
 <br/>For general questions, we suggest asking in Teams so that others can help as well. We encourage people to work together and collaborate. Please feel free to help your fellow students out. Though it is possible to privately message people, we encourage open discussion on the main chat so that others can benefit as well.
 You can also send an e-mail to: [EWU-Instructors@IntelliTect.com](EWU-Instructors@IntelliTect.com) for final grade or general questions.
 
@@ -22,7 +28,7 @@ We will be using GitHub for all class lectures and assignments. All work will be
 
 Here are the things that will be required to learn class concepts. The instructors will assume you already know these items.
 
-- Good grasp of the C# programming language, or, at least the ability to apply knowledge of similar languages such as Java to learn app deployment concepts.
+- A grasp of the C# programming language, or, at least the ability to apply knowledge of similar languages such as Java to learn app deployment concepts.
 - Grasp of basic application programming concepts including building C# projects and calling libraries
 - Familiarity with web development
 - Familiarity with VS Code, Visual Studio, or similar development environments
