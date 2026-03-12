@@ -1,8 +1,10 @@
 ## Introduction
 
-CSCD 396 will provide students with an introduction to building solutions in Azure, Microsoft's Cloud Solution. This course will help prepare students for Microsoft's Certifcation Exam AZ-204.
+CSCD 396 will provide students with an introduction to DevOps principles of People, Process and Tools. We'll cover working on a technical team, the modern software development lifecycle, tooling needed to deploy systems to the cloud, and how advancements in AI are impacting DevOps.
 
-We will cover practical examples that focus on the use of cloud bases services in Azure over advanced programming concepts.
+- This class will give you a core understanding of how to leverage DevOps in both small and enterprise level projects. 
+- We will be building solutions in Azure, Microsoft's Cloud Solution and this course will help prepare students for Microsoft's Certifcation Exam AZ-204.
+- We will cover practical examples that focus on the use of cloud bases services in Azure over advanced programming concepts.
 
 
 
